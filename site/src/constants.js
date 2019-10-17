@@ -5,9 +5,5 @@ function getPrefix() {
     return '/';
   }
 
-  if (process.env.VERSION === 'beta') {
-    return '/zent-beta/';
-  }
-
   return '/zent/';
 }
