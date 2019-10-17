@@ -46,7 +46,7 @@ const readFileToString = curry(readFileSync)(__, 'utf8');
 
 function gather() {
   Object.keys(NAMES).forEach(i18n => {
-    const list = LIST_STATICS[i18n][1].groups;
+    const list = LIST_STATICS[i18n][0].groups;
     const groups = [];
     pipe(
       readdirSync,
@@ -130,7 +130,7 @@ const COMPONENT_GROUP_ORDER = {
 
 function sortComponentGroups(config) {
   Object.keys(NAMES).forEach(i18n => {
-    const componentGroups = config[i18n][1].groups;
+    const componentGroups = config[i18n][0].groups;
     componentGroups.sort((a, b) => {
       const orderDefinition = COMPONENT_GROUP_ORDER[i18n];
       return orderDefinition[a.groupName] - orderDefinition[b.groupName];

@@ -2,7 +2,7 @@ import { Component } from 'react';
 import * as React from 'react';
 import omit from 'lodash-es/omit';
 
-import YearPicker from '../../datetimepicker/YearPicker';
+import { YearPicker } from 'zent';
 import getControlGroup from '../getControlGroup';
 import unknownProps from '../unknownProps';
 

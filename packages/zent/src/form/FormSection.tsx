@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 import * as React from 'react';
-import memoize from '../utils/memorize-one';
+import memoize from 'zent/es/utils/memorize-one';
 
 import { prefixName } from './utils';
 import FormContext from './FormContext';

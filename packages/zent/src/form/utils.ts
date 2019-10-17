@@ -4,7 +4,7 @@ import get from 'lodash-es/get';
 import has from 'lodash-es/has';
 import isFunction from 'lodash-es/isFunction';
 import { findDOMNode } from 'react-dom';
-import scroll from '../utils/scroll';
+import scroll from 'zent/es/utils/scroll';
 import { FieldArrayMutatorAction } from './constants';
 
 const getSelectedValues = options => {

@@ -2,10 +2,11 @@ import { Component } from 'react';
 import * as React from 'react';
 import omit from 'lodash-es/omit';
 
-import DateRangeQuickPicker, {
+import {
+  DateRangeQuickPicker,
   DateRangeQuickPickerChangeCallback,
   DateRangeQuickPickerPresetValue,
-} from '../../date-range-quick-picker';
+} from 'zent';
 import getControlGroup from '../getControlGroup';
 import unknownProps from '../unknownProps';
 

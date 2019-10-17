@@ -5,7 +5,7 @@ import omit from 'lodash-es/omit';
 import assign from 'lodash-es/assign';
 import set from 'lodash-es/set';
 import isEmpty from 'lodash-es/isEmpty';
-import memoize from '../utils/memorize-one';
+import memoize from 'zent/es/utils/memorize-one';
 
 import { prefixName, unliftFieldArrayValue } from './utils';
 import unknownProps from './unknownProps';

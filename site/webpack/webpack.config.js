@@ -2,12 +2,12 @@ const webpack = require('webpack');
 const Fiber = require('fibers');
 const sass = require('sass');
 const os = require('os');
-const { join, resolve } = require('path');
+const { join } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
-const createAlias = require('../../packages/zent/createAlias');
+// const createAlias = require('../../packages/zent/createAlias');
 const constants = require('../src/constants');
 
 const DEV = process.env.NODE_ENV !== 'production';
@@ -23,12 +23,6 @@ module.exports = {
 
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.pcss', '.md'],
-    alias: Object.assign(
-      {
-        zent$: join(__dirname, '../zent'),
-      },
-      createAlias(resolve(__dirname, '../../packages/zent/src'))
-    ),
   },
 
   module: {

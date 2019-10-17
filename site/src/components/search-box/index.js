@@ -166,7 +166,7 @@ class SearchBox extends Component {
 
   buildLUT(navData) {
     // Only include components
-    const { groups } = navData[1];
+    const { groups } = navData[0];
     const data = groups.reduce(
       // eslint-disable-next-line
       (lut, grp) =>

@@ -2,7 +2,7 @@ import { Component } from 'react';
 import * as React from 'react';
 import omit from 'lodash-es/omit';
 
-import Input, { InputType } from '../../input';
+import { Input, InputType } from 'zent';
 import getControlGroup from '../getControlGroup';
 import unknownProps from '../unknownProps';
 

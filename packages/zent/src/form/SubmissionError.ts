@@ -1,4 +1,4 @@
-import ExtendableError from '../utils/ExtendableError';
+import ExtendableError from 'zent/es/utils/ExtendableError';
 
 class SubmissionError extends ExtendableError {
   errors: string[] | string;

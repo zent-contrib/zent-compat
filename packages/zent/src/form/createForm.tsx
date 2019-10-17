@@ -8,8 +8,8 @@ import isEqual from 'lodash-es/isEqual';
 import some from 'lodash-es/some';
 import get from 'lodash-es/get';
 import startsWith from 'lodash-es/startsWith';
-import isPromise from '../utils/isPromise';
-import memoize from '../utils/memorize-one';
+import isPromise from 'zent/es/utils/isPromise';
+import memoize from 'zent/es/utils/memorize-one';
 import {
   getDisplayName,
   silenceEvent,

@@ -1,4 +1,4 @@
-import isPromise from '../utils/isPromise';
+import isPromise from 'zent/es/utils/isPromise';
 import SubmissionError, { isSubmissionError } from './SubmissionError';
 import { scrollToFirstError } from './utils';
 

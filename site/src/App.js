@@ -5,9 +5,9 @@ import {
   Switch,
   Redirect,
 } from 'react-router-dom';
-
-import { I18nProvider } from 'i18n';
-import * as i18nEN from 'i18n/en-US';
+import 'zent/css/index.css';
+import { I18nProvider } from 'zent';
+import * as i18nEN from 'zent/es/i18n/en-US';
 
 import ScrollToTop from './components/ScrollToTop';
 import packageJson from '../../packages/zent/package.json';

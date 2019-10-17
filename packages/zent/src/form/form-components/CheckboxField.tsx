@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import * as React from 'react';
 import omit from 'lodash-es/omit';
+import { Checkbox } from 'zent';
 
-import Checkbox from '../../checkbox';
 import getControlGroup from '../getControlGroup';
 import unknownProps from '../unknownProps';
 
