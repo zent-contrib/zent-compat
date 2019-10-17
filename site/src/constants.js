@@ -5,5 +5,5 @@ function getPrefix() {
     return '/';
   }
 
-  return '/zent/';
+  return '/zent-compat/';
 }
