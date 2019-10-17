@@ -16,10 +16,8 @@
     "prettify-js": "prettier --write -- \"packages/*/__tests__/**/*.js\" \"site/{src,scripts,webpack,zent}/**/*.js\"",
     "prettify-ts": "prettier --write -- \"packages/*/src/**/*.ts*(x)\"",
     "prettify": "yarn prettify-js && yarn prettify-ts && yarn prettify-style",
-    "build": "lerna run build",
-    "dev": "cd site && yarn dev",
-    "deploy": "cd site && yarn deploy",
-    "deploy-beta": "cd site && yarn deploy-beta"
+    "dev": "yarn workspace zent-docs dev",
+    "deploy": "yarn workspace zent-docs deploy"
   },
   "workspaces": [
     "site",
