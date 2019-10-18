@@ -1,0 +1,30 @@
+{
+  "preset": "ts-jest/presets/js-with-babel",
+  "globals": {
+    "ts-jest": {
+      "tsConfig": "tsconfig.test.json"
+    },
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "setupFiles": ["./__tests__/setupTests.js"],
+  "transformIgnorePatterns": ["/node_modules/(?!(lodash-es|zent|fecha)/)"],
+  "testURL": "https://youzan.github.io/zent",
+  "verbose": true,
+  "automock": false,
+  "collectCoverage": true,
+  "coverageReporters": ["text", "text-summary", "lcov", "html"],
+  "timers": "fake",
+  "testPathIgnorePatterns": [
+    "<rootDir>/__tests__/setupTests.js",
+    "<rootDir>/__tests__/form/CreateForm-Field.js",
+    "<rootDir>/__tests__/form/CreateForm-FieldArray.js",
+    "<rootDir>/__tests__/form/GetControlGroup-Component_Fields.js"
+  ],
+  "coveragePathIgnorePatterns": [],
+  "moduleNameMapper": {
+    "^form$": "<rootDir>/src/form",
+    "^form/(.+)$": "<rootDir>/src/form/$1"
+  }
+}

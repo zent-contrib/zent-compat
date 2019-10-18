@@ -27,7 +27,7 @@ const {
 const fm = require('front-matter');
 
 const LIST_STATICS = require('../src/nav.static');
-const SRC = resolve(process.cwd(), '../packages/zent/src');
+const SRC = resolve(process.cwd(), '../packages/zent-compat/src');
 const NAMES = {
   'zh-CN': 'README_zh-CN.md',
   'en-US': 'README_en-US.md',

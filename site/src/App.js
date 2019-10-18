@@ -10,7 +10,7 @@ import { I18nProvider } from 'zent';
 import * as i18nEN from 'zent/es/i18n/en-US';
 
 import ScrollToTop from './components/ScrollToTop';
-import packageJson from '../../packages/zent/package.json';
+import packageJson from '../../packages/zent-compat/package.json';
 import navData from './nav';
 import { registerRoute, registerFooter } from './router.config';
 import { prefix } from './constants';
