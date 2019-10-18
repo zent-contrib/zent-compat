@@ -2,4 +2,13 @@
 
 ## Components
 
-* Form(legacy)
+- Form(legacy)
+
+## Usage
+
+`yarn add @zent/compat`
+
+```js
+// You have to require styles by yourself or use babel-plugin-zent
+import { Form } from '@zent/comat';
+```
