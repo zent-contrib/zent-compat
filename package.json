@@ -8,7 +8,7 @@
     "test-component": "./scripts/test-component.sh",
     "lint": "yarn lint-ts && yarn lint-js && yarn lint-style",
     "lint-ts": "tslint --format stylish --project packages/zent-compat/tsconfig.json 'packages/zent-compat/src/**/*.ts*(x)'",
-    "lint-js": "eslint packages/*/__tests__ site/src/ site/webpack site/zent site/scripts",
+    "lint-js": "eslint packages/*/__tests__ site/src/ site/webpack site/scripts",
     "lint-style": "sass-lint -vq",
     "bootstrap": "./scripts/bootstrap.sh",
     "format": "prettier --write",
