@@ -9,8 +9,21 @@
 `yarn add @zent/compat`
 
 ```js
-// You have to require styles by yourself or use babel-plugin-zent
-import { Form } from '@zent/comat';
+/*
+ You have to require styles by yourself or use babel-plugin-zent
+
+ {
+  "plugins": [
+    ["babel-plugin-zent", { "automaticStyleImport": true, "noModuleRewrite": true }, "zent"],
+    [
+      "babel-plugin-zent",
+      { "libraryName": "@zent/compat", "automaticStyleImport": true, "noModuleRewrite": true },
+      "@zent/compat"
+    ]
+  ]
+}
+*/
+import { Form } from '@zent/compat';
 ```
 
 ## Documentation
