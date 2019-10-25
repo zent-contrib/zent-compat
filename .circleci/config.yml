@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:8-stretch-browsers
-    working_directory: ~/youzan/zent
+    working_directory: ~/youzan/zent-compat
     steps:
       - checkout
       - run:

@@ -40,7 +40,7 @@ export default class PageHeader extends Component {
           <SearchBox locale={i18n} navData={sideNavData} />
           <ul className="page-header__navs">
             <li className="page-header__item">
-              <a href="https://github.com/youzan/zent">
+              <a href="https://github.com/zent-contrib/zent-compat">
                 <img
                   className="page-header__github"
                   src="https://img.yzcdn.cn/zanui/react/GitHub-Mark-120px-plus.png"
