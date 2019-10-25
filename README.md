@@ -12,3 +12,7 @@
 // You have to require styles by yourself or use babel-plugin-zent
 import { Form } from '@zent/comat';
 ```
+
+## Documentation
+
+https://zent-contrib.github.io/zent-compat

@@ -10,4 +10,6 @@ yarn
 # 重新bootstrap，以防有人改了依赖
 yarn bootstrap
 
-# $basepath/../lerna publish --exact "$@"
+pushd $basepath/../packages/zent-compat
+yarn publish "$@"
+popd
