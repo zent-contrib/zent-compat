@@ -2,10 +2,10 @@
   "name": "@zent/compat",
   "version": "7.0.0-next.38",
   "description": "一套前端设计语言和基于React的实现",
-  "bugs": "https://github.com/youzan/zent/issues",
+  "bugs": "https://github.com/zent-contrib/zent-compat/issues",
   "repository": {
     "type": "git",
-    "url": "git@github.com:youzan/zent.git"
+    "url": "git@github.com:zent-contrib/zent-compat.git"
   },
   "main": "./es/index.js",
   "module": "./es/index.js",

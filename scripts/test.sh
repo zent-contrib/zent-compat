@@ -2,7 +2,5 @@
 
 set -e
 
-mkdir -p packages/zent/lib
-ts-node --project packages/zent/scripts/cruiser/tsconfig.json  packages/zent/scripts/cruiser/index.ts packages/zent/src/index.ts packages/zent/assets
-yarn workspace zent test
-yarn workspace babel-plugin-zent test
+ts-node --project packages/zent-compat/scripts/cruiser/tsconfig.json  packages/zent-compat/scripts/cruiser/index.ts packages/zent-compat/src/index.ts packages/zent-compat/assets
+yarn workspace @zent/compat test

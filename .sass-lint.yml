@@ -2,7 +2,7 @@ options:
   formatter: stylish
 files:
   include:
-    - 'packages/zent/assets/**/*.scss'
+    - 'packages/zent-compat/assets/**/*.scss'
     - 'site/src/**/*.scss'
 rules:
   # Extends

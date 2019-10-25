@@ -67,7 +67,7 @@ export default class PageFooter extends Component {
           </li>
           <li className="page-footer__item">
             <a
-              href="https://github.com/youzan/zent/issues"
+              href="https://github.com/zent-contrib/zent-compat/issues"
               className="page-footer__link"
               rel="noopener noreferrer"
               target="_blank"
