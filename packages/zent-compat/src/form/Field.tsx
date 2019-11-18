@@ -45,7 +45,7 @@ export interface IFieldProps {
     previousValues: any
   ) => void;
   onFocus?: React.FocusEventHandler<any>;
-  validations?: IValidation;
+  validations?: IValidation & Record<string, any>;
   validationError?: string;
   validationErrors?: { [key: string]: any };
   validateOnChange?: boolean;
