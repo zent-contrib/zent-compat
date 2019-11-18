@@ -45,7 +45,7 @@ export interface IFormCreateFormConfig {
 }
 
 export interface IFormCreateFormWrapperProps {
-  onSubmit?: () => void;
+  onSubmit?: (values: any, zentForm: any) => void;
   onSubmitSuccess?: () => void;
   onSubmitFail?: () => void;
   onValid?: () => void;
