@@ -11,5 +11,5 @@ yarn
 yarn bootstrap
 
 pushd $basepath/../packages/zent-compat
-yarn publish "$@"
+yarn publish --access public "$@"
 popd
