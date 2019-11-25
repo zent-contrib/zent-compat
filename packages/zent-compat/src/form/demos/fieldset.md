@@ -13,7 +13,8 @@ en-US:
 ---
 
 ```jsx
-import { Form, Notify } from 'zent';
+import { Notify } from 'zent';
+import { Form } from '@zent/compat';
 
 const { Field, Fieldset, FormInputField, createForm } = Form;
 

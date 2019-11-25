@@ -49,7 +49,9 @@ en-US:
 ---
 
 ```jsx
-import { Form, Notify } from 'zent';
+import { Notify } from 'zent';
+import { Form } from '@zent/compat';
+
 const { Field, FormSection, FormInputField, createForm } = Form;
 
 class Address extends React.Component {

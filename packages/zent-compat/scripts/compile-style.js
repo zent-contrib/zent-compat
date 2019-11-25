@@ -12,6 +12,7 @@ function compile() {
       themePath,
       '--no-source-map',
       '--stop-on-error',
+      '--no-error-css',
       '--color',
       '--unicode',
       'assets:css',

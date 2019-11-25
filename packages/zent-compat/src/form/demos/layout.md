@@ -13,7 +13,9 @@ en-US:
 ---
 
 ```jsx
-import { Form, Radio, Notify } from 'zent';
+import { Radio, Notify } from 'zent';
+import { Form } from '@zent/compat';
+
 const { Field, FormInputField, createForm } = Form;
 
 const RadioGroup = Radio.Group;

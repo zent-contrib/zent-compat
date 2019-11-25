@@ -35,7 +35,8 @@ en-US:
 ---
 
 ```jsx
-import { Form, Button, Notify } from 'zent';
+import { Button, Notify } from 'zent';
+import { Form } from '@zent/compat';
 const { Field, FormInputField, createForm } = Form;
 
 class SubmitForm extends React.Component {

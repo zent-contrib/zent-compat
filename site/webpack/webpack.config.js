@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const Fiber = require('fibers');
 const sass = require('sass');
 const os = require('os');
-const { join } = require('path');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
@@ -15,13 +15,16 @@ module.exports = {
   mode: process.env.NODE_ENV,
 
   output: {
-    path: join(__dirname, '../dist'),
+    path: path.join(__dirname, '../dist'),
     filename: '[name]-[hash].js',
     publicPath: constants.prefix,
   },
 
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.pcss', '.md'],
+    alias: {
+      '@zent/compat': path.resolve(__dirname, '../../packages/zent-compat'),
+    },
   },
 
   module: {
@@ -58,6 +61,13 @@ module.exports = {
               sourceMap: DEV,
               implementation: sass,
               fiber: Fiber,
+              includePaths: [
+                path.dirname(
+                  path.dirname(
+                    require.resolve('zent/assets/theme/_default.scss')
+                  )
+                ),
+              ],
             },
           },
         ],
@@ -116,7 +126,7 @@ module.exports = {
           {
             loader: 'react-markdown-doc-loader',
             options: {
-              jsTemplate: join(__dirname, '../react-template.jstpl'),
+              jsTemplate: path.join(__dirname, '../react-template.jstpl'),
               renderers: {
                 markdown: 'Markdown',
                 style: 'Style',

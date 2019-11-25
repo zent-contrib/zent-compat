@@ -21,7 +21,8 @@ en-US:
 ---
 
 ```jsx
-import { Form, Icon, Pop } from 'zent';
+import { Icon, Pop } from 'zent';
+import { Form } from '@zent/compat';
 const { Field, FormInputField, createForm } = Form;
 
 class FieldForm extends React.Component {

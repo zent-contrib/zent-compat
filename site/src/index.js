@@ -6,6 +6,7 @@ import { AppContainer } from 'react-hot-loader';
 import 'prismjs/themes/prism.css';
 import './docs.scss';
 import './react-docs.scss';
+import '../../packages/zent-compat/assets/index.scss';
 
 import App from './App';
 

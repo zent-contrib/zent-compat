@@ -9,7 +9,7 @@
     }
   },
   "setupFiles": ["./__tests__/setupTests.js"],
-  "transformIgnorePatterns": ["/node_modules/(?!(lodash-es|zent|fecha)/)"],
+  "transformIgnorePatterns": ["/node_modules/(?!(lodash-es|zent|formulr)/)"],
   "testURL": "https://youzan.github.io/zent",
   "verbose": true,
   "automock": false,
@@ -23,8 +23,5 @@
     "<rootDir>/__tests__/form/GetControlGroup-Component_Fields.js"
   ],
   "coveragePathIgnorePatterns": [],
-  "moduleNameMapper": {
-    "^form$": "<rootDir>/src/form",
-    "^form/(.+)$": "<rootDir>/src/form/$1"
-  }
+  "moduleDirectories": ["node_modules", "src"]
 }
