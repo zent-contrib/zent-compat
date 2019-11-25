@@ -12266,7 +12266,7 @@ yup@^0.27.0:
     synchronous-promise "^2.0.6"
     toposort "^2.0.2"
 
-zent@^7.2.0:
+zent@^7.0.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/zent/-/zent-7.2.0.tgz#858bd1d78c42d43ce48ba81dd2f3f41879a52834"
   integrity sha512-2ST4UdLJAkAYN1aeWwopn1DW8YZiTpcbIsPaPfkeQXMDaVEjKXF2OfhxlZo68THM4A41u6fIOx8jlPLateIBdw==
