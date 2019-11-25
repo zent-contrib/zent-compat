@@ -26,7 +26,8 @@ en-US:
 
 ```jsx
 import cx from 'classnames';
-import { Form, Select, Input, Notify } from 'zent';
+import { Select, Input, Notify } from 'zent';
+import { Form } from '@zent/compat';
 
 const { Field, createForm } = Form;
 const { SelectTrigger } = Select;

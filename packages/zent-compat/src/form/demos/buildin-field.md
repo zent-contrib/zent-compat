@@ -57,7 +57,8 @@ en-US:
 ---
 
 ```jsx
-import { Form, Radio, Checkbox, Button, Notify } from 'zent';
+import { Radio, Checkbox, Button, Notify } from 'zent';
+import { Form } from '@zent/compat';
 const {
 	Field,
 	FormInputField,

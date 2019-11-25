@@ -15,7 +15,8 @@ en-US:
 ---
 
 ```jsx
-import { Form, NumberInput, ColorPicker, DateRangePicker, Switch, Upload, Notify } from 'zent';
+import { NumberInput, ColorPicker, DateRangePicker, Switch, Upload, Notify } from 'zent';
+import { Form } from '@zent/compat';
 import omit from 'lodash/omit';
 
 const { Field, createForm, getControlGroup, unknownProps } = Form;

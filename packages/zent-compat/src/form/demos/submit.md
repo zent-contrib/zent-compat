@@ -33,7 +33,8 @@ en-US:
 ---
 
 ```jsx
-import { Form, Button, Notify } from 'zent';
+import { Button, Notify } from 'zent';
+import { Form } from '@zent/compat';
 
 const { FormInputField, createForm, SubmissionError } = Form;
 

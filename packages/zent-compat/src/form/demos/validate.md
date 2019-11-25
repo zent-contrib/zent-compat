@@ -64,7 +64,9 @@ en-US:
 
 
 ```jsx
-import { Form, Radio, Checkbox, Notify } from 'zent';
+import { Radio, Checkbox, Notify } from 'zent';
+import { Form } from '@zent/compat';
+
 const { Field, FormInputField, FormCheckboxGroupField, createForm } = Form;
 
 class FieldForm extends React.Component {

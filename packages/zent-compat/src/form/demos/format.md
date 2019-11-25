@@ -7,7 +7,7 @@ en-US:
 ---
 
 ```jsx
-import { Form } from 'zent';
+import { Form } from '@zent/compat';
 const { Field, FormInputField, createForm } = Form;
 
 class FormattedForm extends React.Component {

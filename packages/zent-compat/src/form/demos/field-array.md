@@ -43,7 +43,8 @@ en-US:
 ---
 
 ```jsx
-import { Form, Icon, Pop, Notify } from 'zent';
+import { Icon, Pop, Notify } from 'zent';
+import { Form } from '@zent/compat';
 const {
 	Field,
 	FormInputField,
