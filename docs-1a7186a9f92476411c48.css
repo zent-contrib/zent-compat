@@ -406,6 +406,161 @@ code[class*=language-] {
 .zandoc-react-color-cell__mask-white {
   border: 1px solid #e5e5e5;
 }
+.zent-form {
+  margin-bottom: 30px;
+  width: auto;
+}
+.zent-form select[readonly],
+.zent-form textarea[readonly] {
+  background-color: #fff;
+  background-color: var(--theme-stroke-9, #fff);
+  cursor: text;
+}
+
+.zent-form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.zent-form__legend {
+  border-bottom-color: #ebedf0;
+  border-bottom-color: var(--theme-stroke-6, #ebedf0);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.zent-form__control-group {
+  margin-bottom: 24px;
+}
+.zent-form__control-group.has-error .zent-form__error-desc,
+.zent-form__control-group.has-error .zent-form__help-block {
+  color: #df4545;
+  color: var(--theme-error-4, #df4545);
+}
+
+.zent-form__static-value {
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 5px;
+  word-break: break-all;
+}
+
+.zent-form__control-action {
+  padding-top: 5px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.zent-form__required {
+  color: #d40000;
+  color: var(--theme-error-2, #d40000);
+  margin-right: 6px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.zent-form__help-block,
+.zent-form__error-desc,
+.zent-form__help-desc,
+.zent-form__notice-desc {
+  color: #969799;
+  color: var(--theme-stroke-3, #969799);
+  line-height: 14px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.zent-form__help-block ul li,
+.zent-form__error-desc ul li,
+.zent-form__help-desc ul li,
+.zent-form__notice-desc ul li {
+  font-size: 12px;
+  line-height: 12px;
+}
+.zent-form__help-block a,
+.zent-form__error-desc a,
+.zent-form__help-desc a,
+.zent-form__notice-desc a {
+  color: #155bd4;
+  color: var(--theme-primary-4, #155bd4);
+}
+.zent-form__help-block:empty,
+.zent-form__error-desc:empty,
+.zent-form__help-desc:empty,
+.zent-form__notice-desc:empty {
+  margin-top: 0;
+}
+
+.zent-form__notice-desc {
+  background-color: #fff5ed;
+  background-color: var(--theme-warn-5, #fff5ed);
+  color: #323233;
+  color: var(--theme-stroke-1, #323233);
+  display: inline-block;
+  padding: 5px;
+}
+
+.zent-form--horizontal .zent-form__control-label {
+  display: inline-block;
+  width: 120px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: right;
+  vertical-align: top;
+}
+.zent-form--horizontal .zent-form__control-label + .zent-form__controls {
+  margin-left: 10px;
+}
+.zent-form--horizontal .zent-form__controls {
+  display: inline-block;
+  word-break: break-all;
+  vertical-align: top;
+}
+.zent-form--horizontal .zent-form__form-actions {
+  padding: 0 0 0 130px;
+  margin: 25px 0 10px;
+  background: none;
+  border: 0;
+}
+.zent-form--horizontal .zent-form__checkbox-group {
+  font-size: 0;
+  line-height: 28px;
+}
+.zent-form--horizontal .zent-form__checkbox {
+  line-height: 28px;
+}
+.zent-form--horizontal .zent-form__radio-group {
+  line-height: 28px;
+}
+
+.zent-form--inline .zent-form__control-group {
+  display: inline-block;
+  line-height: 30px;
+  margin-right: 20px;
+}
+.zent-form--inline .zent-form__control-group .zent-form__control-label {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+}
+.zent-form--inline .zent-form__control-group .zent-form__control-label + .zent-form__controls {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.zent-form--vertical .zent-form__control-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 @-webkit-keyframes zandoc-react-loading-ripple {
   0% {
     top: 96px;
