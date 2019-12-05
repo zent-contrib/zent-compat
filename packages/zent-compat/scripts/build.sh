@@ -22,10 +22,8 @@ postcss css --use autoprefixer --replace --no-map
 # minify index.css
 postcss css/index.css --use cssnano --no-map -o css/index.min.css
 
-# transpile using babel
-# cross-env BABEL_ENV=transpile babel src --out-dir lib
-# cross-env BABEL_ENV=es babel src --out-dir es
 echo "Compile esm..."
 tsc
+node $basepath/transform.js
 
 $basepath/./cruiser.sh
