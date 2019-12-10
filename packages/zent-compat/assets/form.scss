@@ -37,6 +37,37 @@
     .zent-form__help-block {
       @include theme-color(color, error, 4);
     }
+
+    /* form error style about input */
+    .zent-input-wrapper {
+      @include theme-color(color, error, 2);
+      @include theme-color(border-color, error, 4);
+      border-width: 1px;
+      border-style: solid;
+
+      &.zent-input--has-focus:not(.zent-input-wrapper__not-editable) {
+        @include theme-color(border-color, error, 4);
+        box-shadow: none;
+      }
+
+      &__not-editable {
+        @include theme-color(border-color, stroke, 5);
+      }
+    }
+    /* form error style about input end */
+
+    /* form error style about select */
+    :not(.no-error) {
+      & > .zent-select-input,
+      & > .zent-select-text,
+      & > .zent-select-tags {
+        @include theme-color(border-color, error, 2);
+        @include theme-color(color, error, 2);
+        border-width: 1px;
+        border-style: solid;
+      }
+    }
+    /* form error style about select end */
   }
 }
 
