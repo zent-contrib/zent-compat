@@ -277,15 +277,17 @@ const createForm = (
       setFieldExternalErrors = (errors, updateDirty = true) => {
         this.fields.forEach(field => {
           const name = field.getName();
-          const error = get(errors, name);
-          const data: IFieldState = {
-            _isValid: false,
-            _externalError: typeof error === 'string' ? [error] : error,
-          };
-          if (updateDirty) {
-            data._isDirty = true;
+          if (errors.hasOwnProperty(name)) {
+            const error = get(errors, name);
+            const data: IFieldState = {
+              _isValid: false,
+              _externalError: typeof error === 'string' ? [error] : error,
+            };
+            if (updateDirty) {
+              data._isDirty = true;
+            }
+            field.setState(data);
           }
-          field.setState(data);
         });
         // 滚动到第一个错误处
         this.props.scrollToError && scrollToFirstError(this.fields);
