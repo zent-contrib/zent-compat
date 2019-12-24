@@ -231,7 +231,7 @@ Field 中传入 value ---> 使用 format() 格式化 value ---> format 过的 va
 | getFormValues | 获取与 form 绑定的所有表单元素值 | func |
 | getFieldError | 获取某个 Field 的错误信息, 没有报错信息返回空 | func(name: String) |
 | setFormDirty | 设置所有 Field 的状态为非原始状态, 用于在提交表单时让 Field 把没有显示出来的错误显示出来 | func(isDirty: Boolean) |
-| setFieldExternalErrors | 设置外部传入的错误信息（比如服务端校验错误）， errors 的 key 为 Field 的 name ， value 为错误文案 | func(errors: Object) |
+| setFieldExternalErrors | 设置外部传入的错误信息（比如服务端校验错误）， errors 的 key 为 Field 的 name ， value 为错误文案 | `(errors: object, updateDirty = true) => void` |
 | setFieldsValue | 设置表单 Field 的值为指定值 | func(data: Object) |
 | resetFieldsValue | 把所有 Field 的值恢复到指定值或初始状态 | func(data: Object) |
 | initialize | 设置表单 Field 初始值 | func(data: Object) |
