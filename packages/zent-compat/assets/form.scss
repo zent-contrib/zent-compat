@@ -40,7 +40,6 @@
 
     /* form error style about input */
     .zent-input-wrapper {
-      @include theme-color(color, error, 2);
       @include theme-color(border-color, error, 4);
       border-width: 1px;
       border-style: solid;
@@ -62,7 +61,6 @@
       & > .zent-select-text,
       & > .zent-select-tags {
         @include theme-color(border-color, error, 2);
-        @include theme-color(color, error, 2);
         border-width: 1px;
         border-style: solid;
       }
