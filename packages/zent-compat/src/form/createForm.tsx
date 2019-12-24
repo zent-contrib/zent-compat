@@ -275,6 +275,10 @@ const createForm = (
 
       // 设置服务端返回的错误信息
       setFieldExternalErrors = (errors, updateDirty = true) => {
+        if (!errors) {
+          return;
+        }
+
         this.fields.forEach(field => {
           const name = field.getName();
           if (errors.hasOwnProperty(name)) {
