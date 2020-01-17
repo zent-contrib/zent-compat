@@ -233,7 +233,7 @@ The components packaged via `Form.createForm` will be added with the `zenForm` p
 | getFormValues | The function to get all the field's values in the form | func |
 | getFieldError | The function to get the error messages of the specified field, which will return null when there is no error. | func(name: String) |
 | setFormDirty | The function to set all the fields to be non-native state, which helps to display all the unshown errors when submitting the form | func(isDirty: Boolean) |
-| setFieldExternalErrors | The function to set external error messages, such as the validation error from the server. The parameter `error` of this function is an object with keys being the names of fields and values being the corresponding error messages. | func(errors: Object) |
+| setFieldExternalErrors | The function to set external error messages, such as the validation error from the server. The parameter `error` of this function is an object with keys being the names of fields and values being the corresponding error messages. | `(errors: object, updateDirty = true) => void` |
 | setFieldsValue | The function to specify the value of a certain field. | func(data: Object) |
 | resetFieldsValue | The funtion to set all the values of all the fields as the initial values or the specified values. | func(data: Object) |
 | initialize | The funtion to set the initial values of the form. | func(data: Object) |
