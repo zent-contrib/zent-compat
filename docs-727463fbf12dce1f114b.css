@@ -438,10 +438,37 @@ code[class*=language-] {
 .zent-form__control-group {
   margin-bottom: 24px;
 }
+.zent-form__control-group.has-error {
+  /* form error style about input */
+  /* form error style about input end */
+  /* form error style about select */
+  /* form error style about select end */
+}
 .zent-form__control-group.has-error .zent-form__error-desc,
 .zent-form__control-group.has-error .zent-form__help-block {
   color: #df4545;
   color: var(--theme-error-4, #df4545);
+}
+.zent-form__control-group.has-error .zent-input-wrapper {
+  border-color: #df4545;
+  border-color: var(--theme-error-4, #df4545);
+  border-width: 1px;
+  border-style: solid;
+}
+.zent-form__control-group.has-error .zent-input-wrapper.zent-input--has-focus:not(.zent-input-wrapper__not-editable) {
+  border-color: #df4545;
+  border-color: var(--theme-error-4, #df4545);
+  box-shadow: none;
+}
+.zent-form__control-group.has-error .zent-input-wrapper__not-editable {
+  border-color: #dcdee0;
+  border-color: var(--theme-stroke-5, #dcdee0);
+}
+.zent-form__control-group.has-error :not(.no-error) > .zent-select-input, .zent-form__control-group.has-error :not(.no-error) > .zent-select-text, .zent-form__control-group.has-error :not(.no-error) > .zent-select-tags {
+  border-color: #d40000;
+  border-color: var(--theme-error-2, #d40000);
+  border-width: 1px;
+  border-style: solid;
 }
 
 .zent-form__static-value {
