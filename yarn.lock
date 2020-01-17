@@ -1268,11 +1268,6 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
-"@types/tinycolor2@^1.4.1":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@types/tinycolor2/-/tinycolor2-1.4.2.tgz#721ca5c5d1a2988b4a886e35c2ffc5735b6afbdf"
-  integrity sha512-PeHg/AtdW6aaIO2a+98Xj7rWY4KC1E6yOy7AFknJQ7VXUGNrMlyxDFxJo7HqLtjQms/ZhhQX52mLVW/EX3JGOw==
-
 "@types/yargs@^12.0.2", "@types/yargs@^12.0.9":
   version "12.0.12"
   resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-12.0.12.tgz#45dd1d0638e8c8f153e87d296907659296873916"
@@ -3794,11 +3789,6 @@ enhanced-resolve@4.1.0, enhanced-resolve@^4.0.0, enhanced-resolve@^4.1.0:
     memory-fs "^0.4.0"
     tapable "^1.0.0"
 
-enquire.js@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/enquire.js/-/enquire.js-2.1.6.tgz#3e8780c9b8b835084c3f60e166dbc3c2a3c89814"
-  integrity sha1-PoeAybi4NQhMP2DhZtvDwqPImBQ=
-
 entities@1.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.0.0.tgz#b2987aa3821347fcde642b24fdfc9e4fb712bf26"
@@ -4810,10 +4800,10 @@ format@^0.2.2:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
-formulr@~0.2.3:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/formulr/-/formulr-0.2.6.tgz#b79068dd4b7253fd5f9d9ec380f34e4db7b9e6c2"
-  integrity sha512-uw7lrCEHfDuiNsGIrc6DHb4VP9mxVUcj/s0rGyoa/Zic7g9FDll7Hns2tbxLDzXUyGwMVTHFnuxYSiYn91UwHQ==
+formulr@~0.2.10:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/formulr/-/formulr-0.2.10.tgz#6a8ba7af74567495486e177f49268bbdd35379fb"
+  integrity sha512-Upxf8Qfa+vf8AIUCCO6ovGM7wh73fcA20b5WBOmKx+F6py73t+wrb6EXrYdt4kyJULdUvYWKkalJ/IzFqkWjtA==
   dependencies:
     big.js "^5.2.2"
     rxjs "^6.4.0"
@@ -11330,7 +11320,7 @@ tiny-warning@^1.0.0:
   resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
-tinycolor2@^1.1.2, tinycolor2@^1.4.1:
+tinycolor2@^1.1.2:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
   integrity sha1-9PrTM0R7wLB9TcjpIJ2POaisd+g=
@@ -12419,30 +12409,27 @@ yup@^0.27.0:
     synchronous-promise "^2.0.6"
     toposort "^2.0.2"
 
-zent@^7.3.2:
-  version "7.4.0"
-  resolved "https://registry.npm.taobao.org/zent/download/zent-7.4.0.tgz#431a798752bc9cb97590349a62ed2def9b9adf0e"
-  integrity sha1-Qxp5h1K8nLl1kDSaYu0t75ua3w4=
+zent@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/zent/-/zent-8.0.0.tgz#f4728cdb16b46921034f7cc705b226e751835b89"
+  integrity sha512-IFbH6bTflUfLhPNnePtNLJPT7KfwwZJPsvE3XyXjJ00lhwHdTa/I5ZELk6S+CW3S6A7quheRdRFMZJpgQfk9hQ==
   dependencies:
     "@types/autosize" "^3.0.6"
     "@types/sortablejs" "~1.7.2"
-    "@types/tinycolor2" "^1.4.1"
     autosize "^4.0.0"
     big.js "^5.2.2"
     classnames "^2.2.6"
     date-fns "^2.7.0"
-    enquire.js "^2.1.6"
-    formulr "~0.2.3"
+    formulr "~0.2.10"
     react-is "^16.8.1"
     react-transition-group "^2.6.0"
     sortablejs "~1.9.0"
-    tinycolor2 "^1.4.1"
     tslib "^1.9.3"
     utility-types "^3.4.1"
     warning "^4.0.3"
-    zenticons "3.1.0"
+    zenticons "3.3.0"
 
-zenticons@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/zenticons/-/zenticons-3.1.0.tgz#80733527e29d841f3deb28efc0a50870ff769e20"
-  integrity sha512-9xmW/18biTGCa/c83qQUFRBrS0toYvu9zUbRlRuaiZH8iHmuQsOKN6ZaqR6XK6bcB5oC4NMnCdi6i7Hm/euFFA==
+zenticons@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/zenticons/-/zenticons-3.3.0.tgz#a6810cee8a616e61611818be1b9b4cdee93e41a5"
+  integrity sha512-UwoSMYY5zzhIgvIozhYIHxE826+BwN9nmdbaFQPUZ7xm91J3/vYYknvtj8qQonxqARwfbR+6fp4T7X7RPOl4pA==
