@@ -12409,10 +12409,10 @@ yup@^0.27.0:
     synchronous-promise "^2.0.6"
     toposort "^2.0.2"
 
-zent@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/zent/-/zent-8.0.0.tgz#f4728cdb16b46921034f7cc705b226e751835b89"
-  integrity sha512-IFbH6bTflUfLhPNnePtNLJPT7KfwwZJPsvE3XyXjJ00lhwHdTa/I5ZELk6S+CW3S6A7quheRdRFMZJpgQfk9hQ==
+zent@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/zent/-/zent-8.0.1.tgz#8be84d51846f69a189378a75f947a251b68fabe7"
+  integrity sha512-k1DyibqCs3mYwRCs6y56T5FT6goqg2biD+3+9JDKk9Jji264qPu3fyvZ+WWPALLhLz+CmCnfLmmuebWw3+e05A==
   dependencies:
     "@types/autosize" "^3.0.6"
     "@types/sortablejs" "~1.7.2"
