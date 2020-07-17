@@ -2,6 +2,7 @@ import {
   II18nLocaleCommon,
   II18nLocaleUpload,
   II18nLocaleTypeMap,
+  II18nLocaleSelect,
 } from './locale';
 
 const common: II18nLocaleCommon = {
@@ -47,4 +48,9 @@ export const Upload: II18nLocaleUpload = {
     extract: 'Extract',
     extracting: 'Extracting...',
   },
+};
+
+export const Select: II18nLocaleSelect = {
+  input: 'Please choose...',
+  empty: 'No matches found',
 };

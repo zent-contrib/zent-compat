@@ -4,13 +4,14 @@
 import * as React from 'react';
 import { Component } from 'react';
 import * as Sortable from 'sortablejs';
-import { Button, Input, Select, Icon } from 'zent';
+import { Button, Input, Icon } from 'zent';
 import FileInput from './FileInput';
 import uploadLocalImage from './UploadLocal';
 import UploadImageItem from './UploadImageItem';
 import { initSortable, swapArray } from '../utils/sortable';
 import { formatFileSize } from '../utils';
 import { UID_KEY } from '../constants';
+import Select from '../../select';
 
 class UploadPopup extends Component<any, any> {
   static defaultProps = {

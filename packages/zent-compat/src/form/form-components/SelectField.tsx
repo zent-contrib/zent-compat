@@ -2,9 +2,9 @@ import { Component } from 'react';
 import * as React from 'react';
 import omit from 'lodash-es/omit';
 
-import { Select, SelectTrigger } from 'zent';
 import getControlGroup from '../getControlGroup';
 import unknownProps from '../unknownProps';
+import Select, { SelectTrigger } from '../../select';
 
 export interface IFormSelectWrapProps {
   trigger?: any;

@@ -31,3 +31,8 @@ export interface II18nLocaleUpload extends II18nLocaleCommon {
     extracting: string;
   };
 }
+
+export interface II18nLocaleSelect {
+  input: string;
+  empty: string;
+}

@@ -2,6 +2,7 @@ import {
   II18nLocaleCommon,
   II18nLocaleTypeMap,
   II18nLocaleUpload,
+  II18nLocaleSelect,
 } from './locale';
 
 const common: II18nLocaleCommon = {
@@ -54,4 +55,9 @@ export const Upload: II18nLocaleUpload = {
     extract: '提取',
     extracting: '提取中...',
   },
+};
+
+export const Select: II18nLocaleSelect = {
+  input: '请选择',
+  empty: '没有找到匹配项',
 };
