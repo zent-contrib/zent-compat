@@ -80,20 +80,12 @@
         "autosize doesn't support compile to ES module, please use cjs require"
       ],
       [
-        "date-fns",
-        "date-fns doesn't support compile to ES module, please use cjs require"
-      ],
-      [
         "enquire.js",
         "enquire.js doesn't support compile to ES module, please use cjs require"
       ],
       [
         "tinycolor2",
         "tinycolor2 doesn't support compile to ES module, please use cjs require"
-      ],
-      [
-        "warning",
-        "warning doesn't support compile to ES module, please use cjs require"
       ]
     ]
   }

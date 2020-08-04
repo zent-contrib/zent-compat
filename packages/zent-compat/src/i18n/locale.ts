@@ -31,3 +31,43 @@ export interface II18nLocaleUpload extends II18nLocaleCommon {
     extracting: string;
   };
 }
+
+export interface II18nLocaleTimePicker extends II18nLocaleCommon {
+  time: string;
+  date: string;
+  week: string;
+  month: string;
+  quarter: string;
+  year: string;
+  range: string;
+  timeErrorPop: string;
+  dateErrorPop: string;
+  start: string;
+  end: string;
+  startTime: string;
+  endTime: string;
+  to: string;
+  current: {
+    time: string;
+    date: string;
+    week: string;
+    month: string;
+    year: string;
+  };
+  panel: {
+    hour: string;
+    minute: string;
+    second: string;
+    year: string;
+    hourSelect: string;
+    minuteSelect: string;
+    secondSelect: string;
+    titleFormat: string;
+    quarterNames: string[];
+    yearQuarterName(options: { year: number; quarter: number }): string;
+    dayNames: string[];
+    monthNames: string[];
+  };
+}
+
+export type I18nLocaleTimePicker = () => II18nLocaleTimePicker;
