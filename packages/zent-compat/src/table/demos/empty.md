@@ -19,7 +19,7 @@ en-US:
 ---
 
 ```js
-import { Table } from 'zent';
+import { Table } from '@zent/compat';
 
 const columns = [{
   title: '{i18n.product}',
