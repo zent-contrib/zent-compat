@@ -9,7 +9,7 @@ en-US:
 ---
 
 ```jsx
-import { Upload } from 'zent';
+import { Upload } from '@zent/compat';
 
 const categoryList = [
 	{ id: 205772, name: 'test1' },

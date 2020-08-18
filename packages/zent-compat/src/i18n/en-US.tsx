@@ -2,6 +2,7 @@ import {
   II18nLocaleCommon,
   II18nLocaleUpload,
   II18nLocaleTypeMap,
+  II18nLocaleTable,
 } from './locale';
 
 const common: II18nLocaleCommon = {
@@ -47,4 +48,9 @@ export const Upload: II18nLocaleUpload = {
     extract: 'Extract',
     extracting: 'Extracting...',
   },
+};
+
+export const Table: II18nLocaleTable = {
+  ...common,
+  emptyLabel: 'No data',
 };

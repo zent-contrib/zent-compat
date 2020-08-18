@@ -31,3 +31,7 @@ export interface II18nLocaleUpload extends II18nLocaleCommon {
     extracting: string;
   };
 }
+
+export interface II18nLocaleTable extends II18nLocaleCommon {
+  emptyLabel: string;
+}
