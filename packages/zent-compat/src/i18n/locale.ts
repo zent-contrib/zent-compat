@@ -36,3 +36,7 @@ export interface II18nLocaleSelect {
   input: string;
   empty: string;
 }
+
+export interface II18nLocaleTable extends II18nLocaleCommon {
+  emptyLabel: string;
+}

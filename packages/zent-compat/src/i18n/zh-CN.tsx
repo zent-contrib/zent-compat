@@ -3,6 +3,7 @@ import {
   II18nLocaleTypeMap,
   II18nLocaleUpload,
   II18nLocaleSelect,
+  II18nLocaleTable,
 } from './locale';
 
 const common: II18nLocaleCommon = {
@@ -60,4 +61,9 @@ export const Upload: II18nLocaleUpload = {
 export const Select: II18nLocaleSelect = {
   input: '请选择',
   empty: '没有找到匹配项',
+};
+
+export const Table: II18nLocaleTable = {
+  ...common,
+  emptyLabel: '没有更多数据了',
 };

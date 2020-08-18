@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { PureComponent } from 'react';
-import isPromise from '../../utils/isPromise';
-import { I18nReceiver as Receiver, II18nLocaleUpload } from '../../i18n';
+import isPromise from 'zent/es/utils/isPromise';
 import { Notify } from 'zent';
 
+import { I18nReceiver as Receiver, II18nLocaleUpload } from '../../i18n';
 import {
   formatFileSize,
   base64ToArrayBuffer,
