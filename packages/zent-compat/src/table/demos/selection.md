@@ -19,7 +19,8 @@ en-US:
 ---
 
 ```js
-import { Table, Notify } from 'zent';
+import { Table } from '@zent/compat';
+import { Notify } from 'zent';
 
 const datasets = [
 	{

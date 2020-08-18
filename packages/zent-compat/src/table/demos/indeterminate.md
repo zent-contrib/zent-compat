@@ -19,7 +19,7 @@ en-US:
 ---
 
 ```jsx
-import { Table } from 'zent';
+import { Table } from '@zent/compat';
 
 const datasets = [
 	{
