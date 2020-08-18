@@ -2,18 +2,18 @@ import * as React from 'react';
 import { PureComponent } from 'react';
 import * as ReactDOM from 'react-dom';
 
+import { BlockLoading } from 'zent';
 import { I18nReceiver as Receiver, II18nLocaleTable } from '../i18n';
-import isBrowser from '../utils/isBrowser';
-import uniq from '../utils/uniq';
-import BlockLoading from '../loading/BlockLoading';
+import isBrowser from 'zent/es/utils/isBrowser';
+import uniq from 'zent/es/utils/uniq';
+import { PaginationPageSizeOption } from 'zent/es/pagination/components/PageSizeChanger';
+import { WindowResizeHandler } from 'zent/es/utils/component/WindowResizeHandler';
+import { WindowScrollHandler } from 'zent/es/utils/component/WindowScrollHandler';
 
 import Head from './modules/Head';
 import Body from './modules/Body';
 import Foot from './modules/Foot';
 import helper from './helper';
-import { PaginationPageSizeOption } from '../pagination/components/PageSizeChanger';
-import { WindowResizeHandler } from '../utils/component/WindowResizeHandler';
-import { WindowScrollHandler } from '../utils/component/WindowScrollHandler';
 
 export type TablePaginationType = 'default' | 'lite' | 'mini';
 

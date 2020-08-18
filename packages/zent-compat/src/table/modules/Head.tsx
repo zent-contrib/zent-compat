@@ -2,12 +2,12 @@ import * as React from 'react';
 import { PureComponent } from 'react';
 import * as ReactDOM from 'react-dom';
 import cx from 'classnames';
+import { Checkbox } from 'zent';
+import { WindowScrollHandler } from 'zent/es/utils/component/WindowScrollHandler';
+import { WindowResizeHandler } from 'zent/es/utils/component/WindowResizeHandler';
 
 import helper from '../helper';
-import Checkbox from '../../checkbox';
 import { ITableChangeConfig } from '../Table';
-import { WindowScrollHandler } from '../../utils/component/WindowScrollHandler';
-import { WindowResizeHandler } from '../../utils/component/WindowResizeHandler';
 
 const stickRowClass = 'stickrow';
 const fixRowClass = 'fixrow';

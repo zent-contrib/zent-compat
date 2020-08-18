@@ -1,5 +1,5 @@
 const helper = {
-  getCalculatedWidth(width) {
+  getCalculatedWidth(width: number | string) {
     let res;
     if (typeof width === 'number') {
       res = `${width}%`;
@@ -22,7 +22,7 @@ const helper = {
     return isReact;
   },
 
-  getAlignClass(textAlign) {
+  getAlignClass(textAlign: string) {
     let alignValue = '';
 
     if (textAlign) {
@@ -45,7 +45,12 @@ const helper = {
   },
 
   // return true/false/null
-  needFixBatchComps(isTableInView, isFootInView, isSelectRows, isFixed) {
+  needFixBatchComps(
+    isTableInView: boolean,
+    isFootInView: boolean,
+    isSelectRows: boolean,
+    isFixed: boolean
+  ) {
     let res = null;
     if (isTableInView && !isFootInView && isSelectRows) {
       if (!isFixed) {

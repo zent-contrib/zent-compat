@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { PureComponent } from 'react';
 import cx from 'classnames';
+import { Checkbox, Radio } from 'zent';
 
-import Checkbox from '../../checkbox';
-import Radio from '../../radio';
 import helper from '../helper';
 
 export default class Td extends PureComponent<any> {

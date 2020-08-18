@@ -1,17 +1,16 @@
 import * as React from 'react';
 import { PureComponent } from 'react';
 import * as ReactDOM from 'react-dom';
-
-import isNil from '../../utils/isNil';
-import helper from '../helper';
-import Pagination from '../../pagination';
-import Checkbox from '../../checkbox';
-import { TablePaginationType, ITablePageInfo } from '../Table';
-import { PaginationChangeHandler } from '../../pagination/impl/BasePagination';
-import LitePagination from '../../pagination/LitePagination';
-import MiniPagination from '../../pagination/MiniPagination';
-import AbstractPagination from '../../pagination/impl/AbstractPagination';
+import { Checkbox, LitePagination, MiniPagination, Pagination } from 'zent';
+import isNil from 'zent/es/utils/isNil';
+import {
+  PaginationChangeHandler,
+  BasePagination,
+} from 'zent/es/pagination/impl/BasePagination';
 import { Class } from 'utility-types';
+
+import helper from '../helper';
+import { TablePaginationType, ITablePageInfo } from '../Table';
 
 export interface ITableFootProps {
   pageInfo: ITablePageInfo;
@@ -115,7 +114,7 @@ export default class Foot extends PureComponent<ITableFootProps> {
     }
 
     // 判断使用哪种 Pagination
-    let PaginationComp: Class<AbstractPagination>;
+    let PaginationComp: Class<BasePagination<any>>;
     switch (paginationType) {
       case 'mini':
         PaginationComp = MiniPagination;
