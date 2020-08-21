@@ -6,6 +6,7 @@
   "scripts": {
     "test": "./scripts/test.sh",
     "test-component": "./scripts/test-component.sh",
+    "check-git-hooks": "./scripts/check-git-hooks.sh",
     "lint": "yarn lint-ts && yarn lint-js && yarn lint-style",
     "lint-ts": "tslint --format stylish --project packages/zent-compat/tsconfig.json 'packages/zent-compat/src/**/*.ts*(x)'",
     "lint-js": "eslint packages/*/__tests__ site/src/ site/webpack site/scripts",
@@ -46,7 +47,7 @@
     "eslint-plugin-react": "^7.11.1",
     "husky": "^1.2.0",
     "lint-staged": "^8.0.5",
-    "prettier": "^1.15.2",
+    "prettier": "^1.19.1",
     "sass-lint": "^1.12.1"
   }
 }

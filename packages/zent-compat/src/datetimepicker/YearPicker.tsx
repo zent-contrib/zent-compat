@@ -3,7 +3,7 @@ import { PureComponent } from 'react';
 import cx from 'classnames';
 
 import { Input, Popover, Icon } from 'zent';
-import getWidth from '../utils/getWidth';
+import getWidth from 'zent/es/utils/getWidth';
 import { I18nReceiver as Receiver } from '../i18n';
 
 import YearPanel from './year/YearPanel';
@@ -12,7 +12,7 @@ import { formatDate, parseDate, dayStart } from './utils';
 import { CURRENT, popPositionMap, commonProps } from './constants';
 import { DatePickers } from './common/types';
 import noop from 'lodash-es/noop';
-import warning from '../utils/warning';
+import warning from 'zent/es/utils/warning';
 
 function getYear(val) {
   if (val instanceof Date) {

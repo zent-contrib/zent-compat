@@ -71,3 +71,6 @@ export interface II18nLocaleTimePicker extends II18nLocaleCommon {
 }
 
 export type I18nLocaleTimePicker = () => II18nLocaleTimePicker;
+export interface II18nLocaleTable extends II18nLocaleCommon {
+  emptyLabel: string;
+}

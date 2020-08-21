@@ -4,7 +4,7 @@ import cx from 'classnames';
 import { Omit } from 'utility-types';
 
 import { Input, Popover, Icon } from 'zent';
-import getWidth from '../utils/getWidth';
+import getWidth from 'zent/es/utils/getWidth';
 import { I18nReceiver as Receiver } from '../i18n';
 
 import DatePanel from './date/DatePanel';
@@ -21,13 +21,14 @@ import {
 import { CURRENT_DAY, popPositionMap, commonProps } from './constants';
 import { DatePickers } from './common/types';
 import noop from 'lodash-es/noop';
-import warning from '../utils/warning';
-import startOfWeek from 'date-fns/startOfWeek';
-import endOfWeek from 'date-fns/endOfWeek';
-import addDays from 'date-fns/addDays';
-import subDays from 'date-fns/subDays';
-import differenceInCalendarDays from 'date-fns/differenceInCalendarDays';
-
+import warning from 'zent/es/utils/warning';
+const {
+  startOfWeek,
+  endOfWeek,
+  addDays,
+  subDays,
+  differenceInCalendarDays,
+} = require('date-fns');
 function getSelectedWeek(
   val,
   start: 0 | 1 | 2 | 3 | 4 | 5 | 6,

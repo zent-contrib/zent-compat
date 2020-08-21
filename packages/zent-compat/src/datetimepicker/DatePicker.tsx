@@ -4,7 +4,7 @@ import cx from 'classnames';
 
 import { Icon, Input, Popover } from 'zent';
 
-import getWidth from '../utils/getWidth';
+import getWidth from 'zent/es/utils/getWidth';
 import { I18nReceiver as Receiver } from '../i18n';
 
 import DatePanel from './date/DatePanel';
@@ -28,7 +28,7 @@ import {
 } from './constants';
 import { DatePickers } from './common/types';
 import noop from 'lodash-es/noop';
-import warning from '../utils/warning';
+import warning from 'zent/es/utils/warning';
 
 function extractStateFromProps(props: IDatePickerProps) {
   let selected;

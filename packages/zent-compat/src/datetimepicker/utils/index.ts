@@ -1,9 +1,7 @@
-import startOfDay from 'date-fns/startOfDay';
-import startOfMonth from 'date-fns/startOfMonth';
-import endOfDay from 'date-fns/endOfDay';
+const { startOfDay, startOfMonth, endOfDay } = require('date-fns');
 
-import formatBase from '../../utils/date/formatDate';
-import parseBase from '../../utils/date/parseDate';
+import formatBase from 'zent/es/utils/date/formatDate';
+import parseBase from 'zent/es/utils/date/parseDate';
 
 import { getLocale } from '../../i18n/time-locale';
 

@@ -4,15 +4,15 @@ import cx from 'classnames';
 import { Omit } from 'utility-types';
 
 import { Input, Popover, Icon } from 'zent';
-import getWidth from '../utils/getWidth';
+import getWidth from 'zent/es/utils/getWidth';
 import { I18nReceiver as Receiver, II18nLocaleTimePicker } from '../i18n';
-import getQuarter from 'date-fns/getQuarter';
+const { getQuarter } = require('date-fns');
 import QuarterPanel from './quarter/QuarterPanel';
 import { dayStart, dayEnd, formatDate, parseDate } from './utils';
 import { popPositionMap, commonProps } from './constants';
 import noop from 'lodash-es/noop';
 import { DatePickers } from './common/types';
-import warning from '../utils/warning';
+import warning from 'zent/es/utils/warning';
 
 const quarterMonthMap = {
   0: 0,
@@ -159,10 +159,9 @@ export class QuarterPicker extends PureComponent<IQuarterPickerProps, any> {
       showPlaceholder: false,
     });
 
-    onChange(ret.map(this.getReturnValue) as [
-      DatePickers.Value,
-      DatePickers.Value
-    ]);
+    onChange(
+      ret.map(this.getReturnValue) as [DatePickers.Value, DatePickers.Value]
+    );
   };
 
   onClearInput = evt => {

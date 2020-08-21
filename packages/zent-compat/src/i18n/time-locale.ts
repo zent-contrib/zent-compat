@@ -1,4 +1,4 @@
-import { IFechaI18nSettings } from '../utils/date/fecha';
+import { IFechaI18nSettings } from 'zent/es/utils/date/fecha';
 
 let locale: IFechaI18nSettings;
 

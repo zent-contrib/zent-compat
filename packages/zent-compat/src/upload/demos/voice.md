@@ -15,7 +15,7 @@ en-US:
 ---
 
 ```jsx
-import { Upload } from 'zent';
+import { Upload } from '@zent/compat';
 
 class Simple extends React.Component {
     constructor(props) {

@@ -3,7 +3,7 @@ import { PureComponent } from 'react';
 import cx from 'classnames';
 
 import { Input, Popover, Icon } from 'zent';
-import getWidth from '../utils/getWidth';
+import getWidth from 'zent/es/utils/getWidth';
 import { I18nReceiver as Receiver } from '../i18n';
 
 import HourPanel from './time/HourPanel';
@@ -14,7 +14,7 @@ import { formatDate, parseDate, dayStart, padLeft } from './utils';
 import { timeFnMap, popPositionMap, commonProps } from './constants';
 import { DatePickers } from './common/types';
 import noop from 'lodash-es/noop';
-import warning from '../utils/warning';
+import warning from 'zent/es/utils/warning';
 
 const DEFAULT_FORMAT = 'HH:mm:ss';
 const DEFAULT_FORMAT_WITHOUT_SECOND = 'HH:mm';

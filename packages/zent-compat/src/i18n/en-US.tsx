@@ -3,6 +3,7 @@ import {
   II18nLocaleCommon,
   II18nLocaleUpload,
   II18nLocaleTypeMap,
+  II18nLocaleTable,
 } from './locale';
 import { setLocale, enUS } from './time-locale';
 
@@ -113,4 +114,9 @@ export const TimePicker: I18nLocaleTimePicker = () => {
       ],
     },
   };
+};
+
+export const Table: II18nLocaleTable = {
+  ...common,
+  emptyLabel: 'No data',
 };
