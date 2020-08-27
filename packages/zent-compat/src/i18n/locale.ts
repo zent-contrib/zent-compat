@@ -32,6 +32,11 @@ export interface II18nLocaleUpload extends II18nLocaleCommon {
   };
 }
 
+export interface II18nLocaleSelect {
+  input: string;
+  empty: string;
+}
+
 export interface II18nLocaleTimePicker extends II18nLocaleCommon {
   time: string;
   date: string;

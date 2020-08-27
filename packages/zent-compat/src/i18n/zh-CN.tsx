@@ -3,6 +3,7 @@ import {
   II18nLocaleCommon,
   II18nLocaleTypeMap,
   II18nLocaleUpload,
+  II18nLocaleSelect,
   II18nLocaleTable,
 } from './locale';
 import { setLocale, zhCN } from './time-locale';
@@ -57,6 +58,11 @@ export const Upload: II18nLocaleUpload = {
     extract: '提取',
     extracting: '提取中...',
   },
+};
+
+export const Select: II18nLocaleSelect = {
+  input: '请选择',
+  empty: '没有找到匹配项',
 };
 
 const QUARTER_NAMES = ['第一季度', '第二季度', '第三季度', '第四季度'];

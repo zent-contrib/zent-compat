@@ -3,6 +3,7 @@ import {
   II18nLocaleCommon,
   II18nLocaleUpload,
   II18nLocaleTypeMap,
+  II18nLocaleSelect,
   II18nLocaleTable,
 } from './locale';
 import { setLocale, enUS } from './time-locale';
@@ -51,6 +52,12 @@ export const Upload: II18nLocaleUpload = {
     extracting: 'Extracting...',
   },
 };
+
+export const Select: II18nLocaleSelect = {
+  input: 'Please choose...',
+  empty: 'No matches found',
+};
+
 const QUARTER_NAMES = [
   '1st Quarter',
   '2nd Quarter',
