@@ -2,7 +2,7 @@ import { Component } from 'react';
 import * as React from 'react';
 import omit from 'lodash-es/omit';
 
-import { TimeRangePicker } from 'zent';
+import { TimeRangePicker } from '../../datetimepicker';
 import getControlGroup from '../getControlGroup';
 import unknownProps from '../unknownProps';
 

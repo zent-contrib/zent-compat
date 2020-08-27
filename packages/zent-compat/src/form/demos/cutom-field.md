@@ -15,14 +15,14 @@ en-US:
 ---
 
 ```jsx
-import { NumberInput, ColorPicker, DateRangePicker, Switch, Upload, Notify } from 'zent';
-import { Form } from '@zent/compat';
+import { NumberInput, ColorPicker, Switch, Notify } from 'zent';
+import { Form, Upload, DateRangePicker } from '@zent/compat';
 import omit from 'lodash/omit';
 
 const { Field, createForm, getControlGroup, unknownProps } = Form;
 
 class UploadWrap extends React.Component {
-	wrappedOnChange = (imgs) => {
+	wrappedOnChange = imgs => {
 		this.props.onChange(imgs);
 	};
 
@@ -33,19 +33,18 @@ class UploadWrap extends React.Component {
 		return (
 			<div>
 				<Upload {...passableProps} onUpload={this.wrappedOnChange} localOnly />
-				{
-					value && value.map((item, index) => {
+				{value &&
+					value.map((item, index) => {
 						return (
-							<img 
-								width="80" 
-								height="80" 
-								key={index} 
-								src={item.src} 
-								style={{marginLeft: '10px'}} 
+							<img
+								width="80"
+								height="80"
+								key={index}
+								src={item.src}
+								style={{ marginLeft: '10px' }}
 							/>
 						);
-					})
-				}
+					})}
 			</div>
 		);
 	}
@@ -54,10 +53,10 @@ class UploadWrap extends React.Component {
 const UploadField = getControlGroup(UploadWrap);
 
 class FieldForm extends React.Component {
-	updateLocalImage = (data) => {
+	updateLocalImage = data => {
 		return new Promise(resolve => {
 			resolve(data);
-		})
+		});
 	};
 
 	submit = (values, zentForm) => {
@@ -66,7 +65,7 @@ class FieldForm extends React.Component {
 
 	resetForm = () => {
 		this.props.zentForm.resetFieldsValue();
-	}
+	};
 
 	render() {
 		const { handleSubmit } = this.props;
@@ -83,8 +82,12 @@ class FieldForm extends React.Component {
 					onUpload={this.updateLocalImage}
 				/>
 				<div className="zent-form__form-actions">
-					<Button type="primary" htmlType="submit">{i18n.submit}</Button>
-					<Button type="primary" outline onClick={this.resetForm}>{i18n.reset}</Button>
+					<Button type="primary" htmlType="submit">
+						{i18n.submit}
+					</Button>
+					<Button type="primary" outline onClick={this.resetForm}>
+						{i18n.reset}
+					</Button>
 				</div>
 			</Form>
 		);
@@ -93,8 +96,5 @@ class FieldForm extends React.Component {
 
 const WrappedForm = createForm()(FieldForm);
 
-ReactDOM.render(
-	<WrappedForm />
-	, mountNode
-)
+ReactDOM.render(<WrappedForm />, mountNode);
 ```
