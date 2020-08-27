@@ -4,9 +4,9 @@
 
 import * as React from 'react';
 import cx from 'classnames';
-import isEqual from '../utils/isEqual';
-import omit from '../utils/omit';
-import noop from '../utils/noop';
+import isEqual from 'zent/es/utils/isEqual';
+import omit from 'zent/es/utils/omit';
+import noop from 'zent/es/utils/noop';
 import { Popover, DisabledContext, IDisabledContext } from 'zent';
 import Option from './components/Option';
 import Trigger from './trigger';

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { PureComponent } from 'react';
 import cx from 'classnames';
 
-import noop from '../../utils/noop';
+import noop from 'zent/es/utils/noop';
 import { I18nReceiver as Receiver, II18nLocaleSelect } from '../../i18n';
 
 import Tag from '../components/Tag';

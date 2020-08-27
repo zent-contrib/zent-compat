@@ -5,11 +5,10 @@
 import * as React from 'react';
 import { Component } from 'react';
 import classnames from 'classnames';
-
-import identity from '../utils/identity';
+import identity from 'zent/es/utils/identity';
 import { Dialog, Icon } from 'zent';
-import { I18nReceiver as Receiver } from '../i18n';
 
+import { I18nReceiver as Receiver } from '../i18n';
 import UploadPopup from './components/UploadPopup';
 import FileInput from './components/FileInput';
 import { DEFAULT_ACCEPT } from './constants';

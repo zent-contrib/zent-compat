@@ -3,13 +3,13 @@
  */
 import * as React from 'react';
 import { Component } from 'react';
-import noop from '../utils/noop';
+import noop from 'zent/es/utils/noop';
 import { Popover } from 'zent';
 import { I18nReceiver as Receiver, II18nLocaleSelect } from '../i18n';
 import Search from './components/Search';
 import Option from './components/Option';
-import defer from '../utils/defer';
-import { addEventListener } from '../utils/component/event-handler';
+import defer from 'zent/es/utils/defer';
+import { addEventListener } from 'zent/es/utils/component/event-handler';
 
 export interface IPopupProps {
   adjustPosition: () => void;

@@ -36,3 +36,46 @@ export interface II18nLocaleSelect {
   input: string;
   empty: string;
 }
+
+export interface II18nLocaleTimePicker extends II18nLocaleCommon {
+  time: string;
+  date: string;
+  week: string;
+  month: string;
+  quarter: string;
+  year: string;
+  range: string;
+  timeErrorPop: string;
+  dateErrorPop: string;
+  start: string;
+  end: string;
+  startTime: string;
+  endTime: string;
+  to: string;
+  current: {
+    time: string;
+    date: string;
+    week: string;
+    month: string;
+    year: string;
+  };
+  panel: {
+    hour: string;
+    minute: string;
+    second: string;
+    year: string;
+    hourSelect: string;
+    minuteSelect: string;
+    secondSelect: string;
+    titleFormat: string;
+    quarterNames: string[];
+    yearQuarterName(options: { year: number; quarter: number }): string;
+    dayNames: string[];
+    monthNames: string[];
+  };
+}
+
+export type I18nLocaleTimePicker = () => II18nLocaleTimePicker;
+export interface II18nLocaleTable extends II18nLocaleCommon {
+  emptyLabel: string;
+}

@@ -6,7 +6,7 @@ import {
   DateRangeQuickPicker,
   DateRangeQuickPickerChangeCallback,
   DateRangeQuickPickerPresetValue,
-} from 'zent';
+} from '../../date-range-quick-picker';
 import getControlGroup from '../getControlGroup';
 import unknownProps from '../unknownProps';
 

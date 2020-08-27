@@ -1,4 +1,4 @@
-import isPromise from '../../utils/isPromise';
+import isPromise from 'zent/es/utils/isPromise';
 
 export default function uploadLocalImage(options, uploadConfig) {
   return new Promise((resolve, reject) => {

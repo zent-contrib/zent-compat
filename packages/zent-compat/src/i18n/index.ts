@@ -2,6 +2,7 @@ import I18nProvider from './I18nProvider';
 import I18nReceiver from './I18nReceiver';
 
 export * from './locale';
+export * from './time-locale';
 
 export { I18nProvider, I18nReceiver };
 
