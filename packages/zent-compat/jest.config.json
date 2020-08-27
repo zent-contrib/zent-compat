@@ -25,7 +25,7 @@
     "<rootDir>/__tests__/form/GetControlGroup-Component_Fields.js"
   ],
   "coveragePathIgnorePatterns": [
-    "<rootDir>/src/select",
+    "<rootDir>/src/select"
   ],
   "moduleDirectories": ["node_modules", "src"]
 }
