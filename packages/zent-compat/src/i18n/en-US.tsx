@@ -5,6 +5,7 @@ import {
   II18nLocaleTypeMap,
   II18nLocaleSelect,
   II18nLocaleTable,
+  II18nLocaleCascader,
 } from './locale';
 import { setLocale, enUS } from './time-locale';
 
@@ -126,4 +127,10 @@ export const TimePicker: I18nLocaleTimePicker = () => {
 export const Table: II18nLocaleTable = {
   ...common,
   emptyLabel: 'No data',
+};
+
+export const Cascader: II18nLocaleCascader = {
+  ...common,
+  title: 'Title',
+  placeholder: 'Please choose',
 };

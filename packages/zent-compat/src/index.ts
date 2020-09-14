@@ -1,3 +1,4 @@
+export * from './cascader';
 export * from './datetimepicker';
 export * from './form';
 export * from './i18n';

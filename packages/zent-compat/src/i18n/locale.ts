@@ -79,3 +79,8 @@ export type I18nLocaleTimePicker = () => II18nLocaleTimePicker;
 export interface II18nLocaleTable extends II18nLocaleCommon {
   emptyLabel: string;
 }
+
+export interface II18nLocaleCascader extends II18nLocaleCommon {
+  title: React.ReactNode;
+  placeholder: string;
+}
