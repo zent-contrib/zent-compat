@@ -5,6 +5,7 @@ import {
   II18nLocaleUpload,
   II18nLocaleSelect,
   II18nLocaleTable,
+  II18nLocaleCascader,
 } from './locale';
 import { setLocale, zhCN } from './time-locale';
 
@@ -129,4 +130,10 @@ export const TimePicker: I18nLocaleTimePicker = () => {
 export const Table: II18nLocaleTable = {
   ...common,
   emptyLabel: '没有更多数据了',
+};
+
+export const Cascader: II18nLocaleCascader = {
+  ...common,
+  title: '标题',
+  placeholder: '请选择',
 };
