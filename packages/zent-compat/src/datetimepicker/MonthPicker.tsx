@@ -2,10 +2,11 @@ import * as React from 'react';
 import { PureComponent } from 'react';
 import cx from 'classnames';
 
-import { Input, Icon, Popover } from 'zent';
+import { Input, Icon } from 'zent';
 import getWidth from 'zent/es/utils/getWidth';
-import { I18nReceiver as Receiver } from '../i18n';
 
+import Popover from '../popover';
+import { I18nReceiver as Receiver } from '../i18n';
 import MonthPanel from './month/MonthPanel';
 import PanelFooter from './common/PanelFooter';
 import { formatDate, parseDate, dayStart, dayEnd, monthStart } from './utils';

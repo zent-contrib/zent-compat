@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Component } from 'react';
 import cx from 'classnames';
-
 import formatDate from 'zent/es/utils/date/formatDate';
 import { getValidDate } from 'zent/es/utils/date/helpers';
 import isEqual from 'zent/es/utils/isEqual';
+
 import { DatePickers } from '../datetimepicker/common/types';
 import DateRangePicker from '../datetimepicker/DateRangePicker';
 import { I18nReceiver as Receiver } from '../i18n';

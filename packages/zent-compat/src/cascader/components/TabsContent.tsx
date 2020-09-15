@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { PureComponent } from 'react';
 import classnames from 'classnames';
-import Popover from 'zent/es/popover';
-import Tabs, { ITabPanelElement, ITabPanelProps } from 'zent/es/tabs';
+import { Tabs, ITabPanelElement, ITabPanelProps } from 'zent';
 
+import Popover from '../../popover';
 import { CascaderHandler, CascaderValue, ICascaderItem } from '../types';
 import { II18nLocaleCascader } from '../../i18n';
 
