@@ -59,15 +59,17 @@ class SearchBox extends Component {
         wrapperClassName="zandoc-react-search-box-popover-wrapper"
       >
         <Popover.Trigger.Click>
-          <Input
-            className="zandoc-react-search-box-input"
-            icon="search"
-            placeholder={i18n[locale].placeholder}
-            value={keyword}
-            onChange={this.onKeywordChange.bind(this)}
-            onClick={this.onInputClick.bind(this)}
-            onKeyDown={this.onKeydown.bind(this)}
-          />
+          <div className="zandoc-react-search-box-popover-wrapper">
+            <Input
+              className="zandoc-react-search-box-input"
+              icon="search"
+              placeholder={i18n[locale].placeholder}
+              value={keyword}
+              onChange={this.onKeywordChange.bind(this)}
+              onClick={this.onInputClick.bind(this)}
+              onKeyDown={this.onKeydown.bind(this)}
+            />
+          </div>
         </Popover.Trigger.Click>
 
         <Popover.Content>
