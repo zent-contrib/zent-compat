@@ -4,7 +4,8 @@
 import * as React from 'react';
 import { Component } from 'react';
 import noop from 'zent/es/utils/noop';
-import { Popover } from 'zent';
+
+import Popover from '../popover';
 import { I18nReceiver as Receiver, II18nLocaleSelect } from '../i18n';
 import Search from './components/Search';
 import Option from './components/Option';

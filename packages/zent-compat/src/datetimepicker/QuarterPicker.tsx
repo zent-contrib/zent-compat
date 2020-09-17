@@ -3,8 +3,10 @@ import { PureComponent } from 'react';
 import cx from 'classnames';
 import { Omit } from 'utility-types';
 
-import { Input, Popover, Icon } from 'zent';
+import { Input, Icon } from 'zent';
 import getWidth from 'zent/es/utils/getWidth';
+
+import Popover from '../popover';
 import { I18nReceiver as Receiver, II18nLocaleTimePicker } from '../i18n';
 const { getQuarter } = require('date-fns');
 import QuarterPanel from './quarter/QuarterPanel';

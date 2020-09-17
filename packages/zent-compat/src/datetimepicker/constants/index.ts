@@ -1,4 +1,4 @@
-import { Popover } from 'zent';
+import Popover from '../../popover';
 import noop from 'lodash-es/noop';
 
 export const CURRENT = new Date();

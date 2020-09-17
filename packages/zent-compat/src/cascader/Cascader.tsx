@@ -2,11 +2,10 @@ import * as React from 'react';
 import { PureComponent } from 'react';
 import classnames from 'classnames';
 import noop from 'zent/es/utils/noop';
-import Popover from 'zent/es/popover';
-import Icon from 'zent/es/icon';
-import { IPopoverClickTriggerProps } from 'zent/es/popover/trigger/ClickTrigger';
-import { DisabledContext, IDisabledContext } from 'zent/es/disabled';
+import { Icon, DisabledContext, IDisabledContext } from 'zent';
 
+import Popover from '../popover';
+import { IPopoverClickTriggerProps } from '../popover/trigger/ClickTrigger';
 import { I18nReceiver as Receiver, II18nLocaleCascader } from '../i18n';
 import { ICascaderItem, CascaderHandler, CascaderValue } from './types';
 import TabsPopoverContent from './components/TabsContent';

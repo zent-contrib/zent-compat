@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { PureComponent } from 'react';
 import classnames from 'classnames';
-import Popover from 'zent/es/popover';
-import Icon from 'zent/es/icon';
+import { Icon } from 'zent';
 
+import Popover from '../../popover';
 import { CascaderHandler, ICascaderItem, CascaderValue } from '../types';
 
 const withPopover = Popover.withPopover;
