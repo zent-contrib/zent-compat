@@ -12428,10 +12428,10 @@ yup@^0.27.0:
     synchronous-promise "^2.0.6"
     toposort "^2.0.2"
 
-zent@^8.5.5:
-  version "8.5.5"
-  resolved "https://registry.yarnpkg.com/zent/-/zent-8.5.5.tgz#252e7cac8429bfdd61a4ff79887720cd8451397f"
-  integrity sha512-dArEloqXFSE9xrQ4tRiDB+Q4P3IgaPn5atVC3WvimEocrMksQdgdJM7AVrIWvKtKo+AMMSS31+Ets/P3WGlbmA==
+zent@^9.0.0-beta1:
+  version "9.0.0-beta1"
+  resolved "https://registry.yarnpkg.com/zent/-/zent-9.0.0-beta1.tgz#6207b8834d22ebca77d18a00cdcb834cd44a9365"
+  integrity sha512-6nPwj2lhNVMhzKPoraf1xfyaTdChk0uTVXxlfbIBQNfSpzukh6joQ41UkWH8+OUeOcrlqSSB1yBU6IDOSBlE5Q==
   dependencies:
     "@types/autosize" "^3.0.7"
     "@types/sortablejs" "~1.7.2"

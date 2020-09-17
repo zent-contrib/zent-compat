@@ -1,4 +1,4 @@
-import Popover from 'zent/es/popover';
+import Popover from '../popover';
 
 export type CascaderValue = string | number;
 

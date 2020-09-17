@@ -7,7 +7,9 @@ import cx from 'classnames';
 import isEqual from 'zent/es/utils/isEqual';
 import omit from 'zent/es/utils/omit';
 import noop from 'zent/es/utils/noop';
-import { Popover, DisabledContext, IDisabledContext } from 'zent';
+import { DisabledContext, IDisabledContext } from 'zent';
+
+import Popover from '../popover';
 import Option from './components/Option';
 import Trigger from './trigger';
 import Popup from './Popup';
