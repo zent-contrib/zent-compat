@@ -38,8 +38,8 @@ describe('MonthPicker', () => {
     expect(pop.find('MonthPanel').length).toBe(1);
     expect(pop.find('.grid-cell').length).toBe(12);
 
-    const click = new Event('click');
-    document.dispatchEvent(click);
+    const click = new MouseEvent('click');
+    document.body.dispatchEvent(click);
     expect(inst.state.openPanel).toBe(false);
     wrapper.find('.picker-input').simulate('click');
     pop = wrapper.find('.zent-popover');

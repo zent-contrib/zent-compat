@@ -280,8 +280,8 @@ describe('DateTimePicker', () => {
     wrapper.find('.picker-input').simulate('click');
     const pop = wrapper.find('.zent-popover');
     expect(pop.find('DatePanel').length).toBe(1);
-    const click = new Event('click');
-    document.dispatchEvent(click);
+    const click = new MouseEvent('click');
+    document.body.dispatchEvent(click);
     expect(wrapper.state('openPanel')).toBe(false);
   });
 
