@@ -280,9 +280,6 @@ describe('DateTimePicker', () => {
     wrapper.find('.picker-input').simulate('click');
     const pop = wrapper.find('.zent-popover');
     expect(pop.find('DatePanel').length).toBe(1);
-    const click = new Event('click');
-    document.dispatchEvent(click);
-    expect(wrapper.state('openPanel')).toBe(false);
   });
 
   it('DatePicker support value whose type is number or DateObj', () => {
