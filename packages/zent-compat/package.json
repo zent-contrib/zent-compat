@@ -64,10 +64,10 @@
     "ts-node": "^8.0.3",
     "tslint": "^5.14.0",
     "typescript": "~3.9.7",
-    "zent": "^8.5.5"
+    "zent": "^9.0.0-beta1"
   },
   "peerDependencies": {
     "@types/react": "^16.8.7",
-    "zent": ">=7.3.2"
+    "zent": ">=9.0.0"
   }
 }
