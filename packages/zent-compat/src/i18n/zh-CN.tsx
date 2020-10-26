@@ -6,6 +6,7 @@ import {
   II18nLocaleSelect,
   II18nLocaleTable,
   II18nLocaleCascader,
+  II18nLocalePop,
 } from './locale';
 import { setLocale, zhCN } from './time-locale';
 
@@ -136,4 +137,8 @@ export const Cascader: II18nLocaleCascader = {
   ...common,
   title: '标题',
   placeholder: '请选择',
+};
+
+export const Pop: II18nLocalePop = {
+  ...common,
 };
