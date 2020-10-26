@@ -7,4 +7,5 @@ export * from './pop';
 export * from './popover';
 export * from './select';
 export * from './table';
+export * from './tooltip';
 export * from './upload';
