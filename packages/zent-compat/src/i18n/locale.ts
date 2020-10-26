@@ -84,3 +84,5 @@ export interface II18nLocaleCascader extends II18nLocaleCommon {
   title: React.ReactNode;
   placeholder: string;
 }
+
+export interface II18nLocalePop extends II18nLocaleCommon {}

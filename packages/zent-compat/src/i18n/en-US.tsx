@@ -6,6 +6,7 @@ import {
   II18nLocaleSelect,
   II18nLocaleTable,
   II18nLocaleCascader,
+  II18nLocalePop,
 } from './locale';
 import { setLocale, enUS } from './time-locale';
 
@@ -133,4 +134,8 @@ export const Cascader: II18nLocaleCascader = {
   ...common,
   title: 'Title',
   placeholder: 'Please choose',
+};
+
+export const Pop: II18nLocalePop = {
+  ...common,
 };
