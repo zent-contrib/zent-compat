@@ -1101,13 +1101,6 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@types/autosize@^3.0.7":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@types/autosize/-/autosize-3.0.7.tgz#f5da28d7ea4532c8b60573d67ec04fc866fa13db"
-  integrity sha512-D46m3aBNg81QKk9ZigmDFuhXUkD4IpBSrkGUKpYo2QBETbUjqEe8msXNCcECaXLXv1O4ppdMpizgFRzpfrgOxA==
-  dependencies:
-    "@types/jquery" "*"
-
 "@types/babel__core@^7.1.0":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.2.tgz#608c74f55928033fce18b99b213c16be4b3d114f"
@@ -1192,13 +1185,6 @@
   dependencies:
     "@types/jest-diff" "*"
 
-"@types/jquery@*":
-  version "3.3.31"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.31.tgz#27c706e4bf488474e1cb54a71d8303f37c93451b"
-  integrity sha512-Lz4BAJihoFw5nRzKvg4nawXPzutkv7wmfQ5121avptaSIXlDNJCUuxZxX/G+9EVidZGuO0UBlk+YjKbwRKJigg==
-  dependencies:
-    "@types/sizzle" "*"
-
 "@types/lodash-es@^4.17.1":
   version "4.17.3"
   resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.17.3.tgz#87eb0b3673b076b8ee655f1890260a136af09a2d"
@@ -1253,10 +1239,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/sizzle@*":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
-  integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
+"@types/sortablejs@~1.10.6":
+  version "1.10.6"
+  resolved "https://registry.npm.taobao.org/@types/sortablejs/download/@types/sortablejs-1.10.6.tgz#98725ae08f1dfe28b8da0fdf302c417f5ff043c0"
+  integrity sha1-mHJa4I8d/ii42g/fMCxBf1/wQ8A=
 
 "@types/sortablejs@~1.7.2":
   version "1.7.3"
@@ -1817,11 +1803,6 @@ autoprefixer@^9.3.1, autoprefixer@^9.4.6, autoprefixer@^9.6.1:
     num2fraction "^1.2.2"
     postcss "^7.0.17"
     postcss-value-parser "^4.0.0"
-
-autosize@^4.0.0:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/autosize/-/autosize-4.0.2.tgz#073cfd07c8bf45da4b9fd153437f5bafbba1e4c9"
-  integrity sha512-jnSyH2d+qdfPGpWlcuhGiHmqBJ6g3X+8T+iRwFrHPLVcdoGJE/x6Qicm6aDHfTsbgZKxyV8UU/YB2p4cjKDRRA==
 
 awesome-typescript-loader@^5.2.1:
   version "5.2.1"
@@ -10736,6 +10717,11 @@ sort-keys@^1.0.0:
   dependencies:
     is-plain-obj "^1.0.0"
 
+sortablejs@~1.12.0:
+  version "1.12.0"
+  resolved "https://registry.npm.taobao.org/sortablejs/download/sortablejs-1.12.0.tgz?cache=0&sync_timestamp=1601884638047&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsortablejs%2Fdownload%2Fsortablejs-1.12.0.tgz#ee6d7ece3598c2af0feb1559d98595e5ea37cbd6"
+  integrity sha1-7m1+zjWYwq8P6xVZ2YWV5eo3y9Y=
+
 sortablejs@~1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/sortablejs/-/sortablejs-1.9.0.tgz#2d1e74ae6bac2cb4ad0622908f340848969eb88d"
@@ -12428,21 +12414,19 @@ yup@^0.27.0:
     synchronous-promise "^2.0.6"
     toposort "^2.0.2"
 
-zent@^9.0.0-beta1:
-  version "9.0.0-beta1"
-  resolved "https://registry.yarnpkg.com/zent/-/zent-9.0.0-beta1.tgz#6207b8834d22ebca77d18a00cdcb834cd44a9365"
-  integrity sha512-6nPwj2lhNVMhzKPoraf1xfyaTdChk0uTVXxlfbIBQNfSpzukh6joQ41UkWH8+OUeOcrlqSSB1yBU6IDOSBlE5Q==
+zent@^9.0.0-beta3:
+  version "9.0.0-beta3"
+  resolved "https://registry.npm.taobao.org/zent/download/zent-9.0.0-beta3.tgz#1c1254f3d6af6c78f020036cc11a31e15defd64a"
+  integrity sha1-HBJU89avbHjwIANswRox4V3v1ko=
   dependencies:
-    "@types/autosize" "^3.0.7"
-    "@types/sortablejs" "~1.7.2"
-    autosize "^4.0.0"
+    "@types/sortablejs" "~1.10.6"
     big.js "^5.2.2"
     classnames "^2.2.6"
     date-fns "^2.7.0"
     react-is "^16.8.1"
     react-transition-group "^2.6.0"
     rxjs "^6.6.2"
-    sortablejs "~1.9.0"
+    sortablejs "~1.12.0"
     tslib "^2.0.0"
     utility-types "^3.4.1"
     warning "^4.0.3"
