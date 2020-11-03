@@ -4,7 +4,7 @@ import get from 'lodash-es/get';
 import has from 'lodash-es/has';
 import isFunction from 'lodash-es/isFunction';
 import { findDOMNode } from 'react-dom';
-import scroll from 'zent/es/utils/scroll';
+import { smoothScroll } from 'zent/es/utils/scroll';
 import { FieldArrayMutatorAction } from './constants';
 
 const getSelectedValues = options => {
@@ -119,7 +119,7 @@ export function scrollToNode(node: React.ReactInstance) {
   const elementBound = (element as Element).getBoundingClientRect();
   const y = elementBound.top + window.pageYOffset;
   const x = elementBound.left + window.pageXOffset;
-  scroll(document.body, x, y);
+  smoothScroll(document.body, x, y);
 }
 
 export function scrollToFirstError(fields) {
