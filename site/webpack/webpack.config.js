@@ -23,7 +23,7 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.pcss', '.md'],
     alias: {
-      '@zent/compat': path.resolve(__dirname, '../../packages/zent-compat'),
+      '@zent/compat': path.resolve(__dirname, '../../packages/zent-compat/src'),
     },
   },
 

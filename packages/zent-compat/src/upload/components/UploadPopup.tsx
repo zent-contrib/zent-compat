@@ -3,6 +3,7 @@
  */
 import * as React from 'react';
 import { Component } from 'react';
+// use this only as type, @types/sortablejs and sortablejs cannot be used with `esModuleInterop: false`
 import * as Sortable from 'sortablejs';
 import { Button, Input, Icon } from 'zent';
 import FileInput from './FileInput';
@@ -12,6 +13,9 @@ import { initSortable, swapArray } from '../utils/sortable';
 import { formatFileSize } from '../utils';
 import { UID_KEY } from '../constants';
 import Select from '../../select';
+
+// use this as value
+// const SortableJS: typeof _SortableJS = (_SortableJS as any).default;
 
 class UploadPopup extends Component<any, any> {
   static defaultProps = {
