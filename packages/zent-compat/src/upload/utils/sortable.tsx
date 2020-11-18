@@ -1,10 +1,14 @@
-import * as Sortable from 'sortablejs';
+// use this only as type, @types/sortablejs and sortablejs cannot be used with `esModuleInterop: false`
+import * as SortableJS from 'sortablejs';
+
+// use this as value
+const SortableJSValue: typeof SortableJS = (SortableJS as any).default;
 
 const UNSORTABLE = 'unsortable';
 
 export function initSortable(el, onMove) {
   let initState = [];
-  const sortable = Sortable.create(el, {
+  const sortable = SortableJSValue.create(el, {
     filter: `.${UNSORTABLE}`,
     onStart() {
       initState = sortable.toArray();
