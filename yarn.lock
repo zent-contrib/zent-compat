@@ -12404,10 +12404,10 @@ yup@^0.27.0:
     synchronous-promise "^2.0.6"
     toposort "^2.0.2"
 
-zent@^9.0.0-beta3:
-  version "9.0.0-beta3"
-  resolved "https://registry.npm.taobao.org/zent/download/zent-9.0.0-beta3.tgz#1c1254f3d6af6c78f020036cc11a31e15defd64a"
-  integrity sha1-HBJU89avbHjwIANswRox4V3v1ko=
+zent@9.0.0-beta13:
+  version "9.0.0-beta13"
+  resolved "https://registry.yarnpkg.com/zent/-/zent-9.0.0-beta13.tgz#0bfe2f8ad142e272c13f32892c6a8411eee07350"
+  integrity sha512-GBXisD0LSdKCewzsG9j/10nNL/I7IDSInGZAhRokeziz2G3eKU3Qn4ZpjHnuo37mX1ttdY/yr2pOa2Ksoq/x5A==
   dependencies:
     "@types/sortablejs" "~1.10.6"
     big.js "^5.2.2"
@@ -12420,9 +12420,9 @@ zent@^9.0.0-beta3:
     tslib "^2.0.0"
     utility-types "^3.4.1"
     warning "^4.0.3"
-    zenticons "3.6.2"
+    zenticons "3.6.3"
 
-zenticons@3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/zenticons/-/zenticons-3.6.2.tgz#77280cb8ad1eabecbc069b541ef13aa983be7c55"
-  integrity sha512-1lI1GZTHIJQysGDMUsZz7PO+q5Kze5SxspEuFAEG8mAdsblGHrqoNnMXJpEcuTaQr83gIFwe+vhXD5au/Wn1uw==
+zenticons@3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/zenticons/-/zenticons-3.6.3.tgz#26e07373df2843ea9af65a8be38b7d407e0a29b5"
+  integrity sha512-7PrqGTZNVfFYsrD7tuTILbRw9YtNXmPalHrR7p541YBcIrQo2sgWmyff201G/41uv2qp9aZZbA3DMjrPRBwiag==
