@@ -64,7 +64,7 @@
     "ts-node": "^8.0.3",
     "tslint": "^5.14.0",
     "typescript": "~3.9.7",
-    "zent": "^9.0.0-beta3"
+    "zent": "9.0.0-beta13"
   },
   "peerDependencies": {
     "@types/react": "^16.8.7",
