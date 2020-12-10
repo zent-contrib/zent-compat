@@ -1,7 +1,7 @@
 import isPromise from 'zent/es/utils/isPromise';
 
 export default function uploadLocalImage(options, uploadConfig) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     const { onUpload } = options;
 
     if (typeof onUpload !== 'function') {

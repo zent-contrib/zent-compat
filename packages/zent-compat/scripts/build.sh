@@ -17,10 +17,19 @@ echo "Compile styles..."
 node $basepath/./compile-style.js
 
 # autoprefixer
-postcss css --use autoprefixer --replace --no-map
+postcss \
+  css \
+  --use 'zent/plugins/postcss-plugin-constants' \
+  --use autoprefixer \
+  --replace \
+  --no-map
 
 # minify index.css
-postcss css/index.css --use cssnano --no-map -o css/index.min.css
+postcss \
+  css/index.css \
+  --use cssnano \
+  --no-map \
+  -o css/index.min.css
 
 echo "Compile esm..."
 tsc

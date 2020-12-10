@@ -1,6 +1,6 @@
 import React from 'react';
 import Enzyme, { mount, ReactWrapper } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 import { Select as I18nDefault } from 'i18n/default';
 import Select, { Option } from 'select';
