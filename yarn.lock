@@ -12616,10 +12616,10 @@ yup@^0.27.0:
     synchronous-promise "^2.0.6"
     toposort "^2.0.2"
 
-zent@9.0.0-beta.26:
-  version "9.0.0-beta.26"
-  resolved "https://registry.yarnpkg.com/zent/-/zent-9.0.0-beta.26.tgz#f2263db7f642a1fadd6e0db05c6c959352e34041"
-  integrity sha512-ALyIjQYM5HUWlpnGR1Syt9xAo/YYMA48580G+1818masn8Y5cGYau++SQNsNsTeVV7ooOU8S7z2cLbJ0lRdYFQ==
+zent@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/zent/-/zent-9.0.0.tgz#6f043bec825696620f79cd334d21b6fbc5611f9c"
+  integrity sha512-p4aHPwghhkMa6/qgQ7gwLn4kXWQ/em0tmo3fYSuZUsfp3v39ik4ZijIsPulmPcRagNbaQabo+CglzjZoadGwnA==
   dependencies:
     "@types/resize-observer-browser" "^0.1.4"
     "@types/sortablejs" "~1.10.6"
