@@ -7,6 +7,7 @@ import {
   II18nLocaleTable,
   II18nLocaleCascader,
   II18nLocalePop,
+  II18nLocaleRangePicker,
 } from './locale';
 import { setLocale, zhCN } from './time-locale';
 
@@ -141,4 +142,9 @@ export const Cascader: II18nLocaleCascader = {
 
 export const Pop: II18nLocalePop = {
   ...common,
+};
+
+export const RangePicker: II18nLocaleRangePicker = {
+  7: '近7天',
+  30: '近30天',
 };

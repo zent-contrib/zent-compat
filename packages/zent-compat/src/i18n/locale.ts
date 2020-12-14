@@ -86,3 +86,8 @@ export interface II18nLocaleCascader extends II18nLocaleCommon {
 }
 
 export interface II18nLocalePop extends II18nLocaleCommon {}
+
+export interface II18nLocaleRangePicker {
+  '7': string;
+  '30': string;
+}
