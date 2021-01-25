@@ -1,11 +1,17 @@
 import isPromise from 'zent/es/utils/isPromise';
+import { IFormScrollToErrorOptions } from './createForm';
 import SubmissionError, { isSubmissionError } from './SubmissionError';
 import { scrollToFirstError } from './utils';
 
 const handleSubmit = (submit, zentForm) => {
   const props = zentForm.props;
   const values = zentForm.getFormValues();
-  const { onSubmitSuccess, onSubmitFail, scrollToError } = props;
+  const {
+    onSubmitSuccess,
+    onSubmitFail,
+    scrollToError,
+    willScrollToError,
+  } = props;
   let validationErrors;
 
   zentForm.setFormDirty(true);
@@ -72,16 +78,28 @@ const handleSubmit = (submit, zentForm) => {
     return result;
   };
 
+  const scrollToFirstErrorFn = (options?: IFormScrollToErrorOptions) => {
+    // 滚动到第一个错误处
+    scrollToError && scrollToFirstError(zentForm.fields, options);
+
+    if (onSubmitFail) {
+      handleOnSubmitError(new SubmissionError(validationErrors));
+    }
+  };
+
   const afterValidation = () => {
     if (!zentForm.isValid()) {
       // 存在校验错误
       validationErrors = zentForm.getValidationErrors();
 
-      // 滚动到第一个错误处
-      scrollToError && scrollToFirstError(zentForm.fields);
-
-      if (onSubmitFail) {
-        handleOnSubmitError(new SubmissionError(validationErrors));
+      const p = willScrollToError(zentForm);
+      if (!isPromise(p)) {
+        scrollToFirstErrorFn(p);
+      } else {
+        // Do not scroll if promise rejects
+        p.then(opt => {
+          scrollToFirstErrorFn(opt);
+        }).catch(() => {});
       }
     } else if (!zentForm.isFormAsyncValidated()) {
       // 存在没有进行过的异步校验
