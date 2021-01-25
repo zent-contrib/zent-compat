@@ -6,6 +6,7 @@ import isFunction from 'lodash-es/isFunction';
 import { findDOMNode } from 'react-dom';
 import scroll from 'zent/es/utils/scroll';
 import { FieldArrayMutatorAction } from './constants';
+import { IFormScrollToErrorOptions } from './createForm';
 
 const getSelectedValues = options => {
   const result = [];
@@ -104,7 +105,10 @@ export function isFunctional(Component) {
   );
 }
 
-export function scrollToNode(node: React.ReactInstance) {
+export function scrollToNode(
+  node: React.ReactInstance,
+  options = {} as IFormScrollToErrorOptions
+) {
   const element = findDOMNode(node);
 
   // Skip if element is not a DOM node or text node
@@ -119,10 +123,15 @@ export function scrollToNode(node: React.ReactInstance) {
   const elementBound = (element as Element).getBoundingClientRect();
   const y = elementBound.top + window.pageYOffset;
   const x = elementBound.left + window.pageXOffset;
-  scroll(document.body, x, y);
+
+  const { offsetX = 0, offsetY = 0 } = options;
+  scroll(document.body, x + offsetX, y + offsetY);
 }
 
-export function scrollToFirstError(fields) {
+export function scrollToFirstError(
+  fields,
+  options?: IFormScrollToErrorOptions
+) {
   for (let i = 0; i < fields.length; i++) {
     const field = fields[i];
     if (!field.isValid()) {
@@ -136,7 +145,7 @@ export function scrollToFirstError(fields) {
       }
 
       if (node) {
-        scrollToNode(node);
+        scrollToNode(node, options);
         return true;
       }
     }

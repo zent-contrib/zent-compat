@@ -216,10 +216,11 @@ Field 中传入 value ---> 使用 format() 格式化 value ---> format 过的 va
 | onSubmitSuccess | 提交成功后的回调，参数是 submit 函数中 promise 的返回值 | func(submitResult: any) |noop | 否 |
 | onSubmitFail | 提交失败后的回调，参数要么是 SubmissionError 的一个实例，要么是提交过程中发生的错误对象 | func(submitError: SubmissionError | Error) | noop | 否 |
 | scrollToError | 表单提交时或者设置外部错误时，表单自动滚动至第一个报错表单域 | boolean | `false` | 否 |
+| willScrollToError | 表单自动滚动之前的回调函数，可以自定义 offset | func(zentForm) | noop | 否 |
 
 ⚠️注意：
 
-1. `onChange`, `onSubmitSuccess`, `onSubmitFail`, `scrollToError` 也支持通过 `createForm` 的 `options` 参数传入；
+1. `onChange`, `onSubmitSuccess`, `onSubmitFail`, `scrollToError`, `willScrollToError` 也支持通过 `createForm` 的 `options` 参数传入；
 2. 想要获取被 createForm 包裹的 FormComponent 的实例，可以在 createForm 创建的组件上添加 ref 然后调用`getWrappedForm`方法获取到。
 
 ##### **`zentForm`**
