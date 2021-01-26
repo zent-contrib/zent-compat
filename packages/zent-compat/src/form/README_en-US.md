@@ -218,10 +218,11 @@ The `createForm` method builds a higher-order component that defines some additi
 | onSubmitSuccess | The callback function that is triggered when the form submission is successful. The parameter of this function is the return result of the promise in submit function. | func(submitResult: any) | noop | no |
 | onSubmitFail | The callback function that is triggered when the form submission is failed. The parameter of this function is an instance of `SubmissionError` or any error thrown during submit. | func(submitError: SubmissionError | Error) | noop | no |
 | scrollToError | The form automatically scrolls to the first field with error when the form is submitting or extra error is setting. | boolean | `false` | no |
+| willScrollToError | A function that you can set scroll offset before the form automatically scroll with error | func(zentForm) | noop | no |
 
 ⚠️Ps:
 
-1. It is supported to set `onChange`, `onSubmitSuccess`, `onSubmitFail`, `scrollToError` through the parameter `options` of `createForm`;
+1. It is supported to set `onChange`, `onSubmitSuccess`, `onSubmitFail`, `scrollToError`, `willScrollToError` through the parameter `options` of `createForm`;
 2. To get an instance of a the form component which is wrapped by `createForm`, you can add a ref on the component created by `createForm` and then call the `getWrappedForm` method.
 
 ##### **`zentForm`**
