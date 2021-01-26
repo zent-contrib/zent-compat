@@ -220,7 +220,7 @@ describe('Form-Utilities', () => {
       },
     });
 
-    scrollToFirstError([]);
+    scrollToFirstError([], { offsetY: -10 });
 
     scrollToFirstError([
       mockField({ isValid: false }),

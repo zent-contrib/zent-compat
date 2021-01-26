@@ -42,6 +42,17 @@ export interface IFormCreateFormConfig {
   onSubmitSuccess?: () => void;
   onSubmitFail?: () => void;
   scrollToError?: boolean;
+  willScrollToError?: (
+    zentForm: any
+  ) =>
+    | void
+    | IFormScrollToErrorOptions
+    | Promise<IFormScrollToErrorOptions | void>;
+}
+
+export interface IFormScrollToErrorOptions {
+  offsetX?: number;
+  offsetY?: number;
 }
 
 export interface IFormCreateFormWrapperProps {
@@ -53,7 +64,12 @@ export interface IFormCreateFormWrapperProps {
   onChange?: (values?: object, isChanged?: boolean) => void;
   validationErrors?: { [key: string]: string };
   scrollToError?: boolean;
-
+  willScrollToError?: (
+    zentForm: any
+  ) =>
+    | void
+    | IFormScrollToErrorOptions
+    | Promise<IFormScrollToErrorOptions | void>;
   [key: string]: any;
 }
 
@@ -73,6 +89,7 @@ const createForm = (
     onSubmitSuccess,
     onSubmitFail,
     scrollToError,
+    willScrollToError,
   } = config;
   const validationRules = assign({}, rules, formValidations);
 
@@ -128,6 +145,7 @@ const createForm = (
         onChange: onChange || noop,
         validationErrors: null,
         scrollToError: scrollToError || false,
+        willScrollToError: willScrollToError || noop,
       };
 
       getFormProp = memoize(() => ({
