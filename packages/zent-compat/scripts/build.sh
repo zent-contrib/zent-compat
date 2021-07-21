@@ -19,7 +19,7 @@ node $basepath/./compile-style.js
 # autoprefixer
 postcss \
   css \
-  --use 'zent/plugins/postcss-plugin-constants' \
+  --use "$(realpath "$basepath/../plugins/postcss-plugin-constants")" \
   --use autoprefixer \
   --replace \
   --no-map
