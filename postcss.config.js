@@ -2,7 +2,7 @@
 
 module.exports = {
   plugins: [
-    require('zent/plugins/postcss-plugin-constants')(),
+    require('./packages/zent-compat/plugins/postcss-plugin-constants')(),
     require('autoprefixer')(),
   ],
 };
