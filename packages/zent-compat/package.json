@@ -1,6 +1,6 @@
 {
   "name": "@zent/compat",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "一套前端设计语言和基于React的实现",
   "bugs": "https://github.com/zent-contrib/zent-compat/issues",
   "repository": {
