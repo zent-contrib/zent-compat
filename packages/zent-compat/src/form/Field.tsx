@@ -50,7 +50,7 @@ export interface IFieldProps {
   validationErrors?: { [key: string]: any };
   validateOnChange?: boolean;
   validateOnBlur?: boolean;
-  asyncValidation?: (values: {}, value: any) => Promise<any>;
+  asyncValidation?: (values: any, value: any) => Promise<any>;
   displayError?: boolean;
   clearErrorOnFocus?: boolean;
   relatedFields?: string[];
