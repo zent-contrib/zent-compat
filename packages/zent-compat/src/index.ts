@@ -9,3 +9,5 @@ export * from './select';
 export * from './table';
 export * from './tooltip';
 export * from './upload';
+export * from './link';
+export * from './tree';
