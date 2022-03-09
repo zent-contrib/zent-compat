@@ -342,7 +342,7 @@ export class Cascader<
                       <span className="zent-cascader__select-text-content">
                         {cascaderValue}
                       </span>
-                      <Icon type="caret-down" />
+                      <Icon type="down" />
                     </div>
                   </div>
                 </PopoverClickTrigger>
