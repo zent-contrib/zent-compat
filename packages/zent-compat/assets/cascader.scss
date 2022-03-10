@@ -76,13 +76,13 @@
       }
 
       .zenticon {
+        @include theme-color(color, stroke, 3);
         position: absolute;
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
         transition: transform 0.25s;
         font-size: $font-size-h4;
-        color: #999;
       }
     }
   }
