@@ -1,5 +1,5 @@
-@import './theme/default';
-@import './theme/font';
+@import 'theme/default';
+@import 'theme/font';
 
 .zent-tree {
   @include theme-color(color, stroke, 1);

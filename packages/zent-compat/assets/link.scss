@@ -1,5 +1,5 @@
-@import './theme/default';
-@import './theme/font';
+@import 'theme/default';
+@import 'theme/font';
 
 @mixin link-grey($prop) {
   @include theme-color($prop, stroke, 4);

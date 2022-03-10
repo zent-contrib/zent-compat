@@ -76,12 +76,13 @@
       }
 
       .zenticon {
+        @include theme-color(color, stroke, 3);
         position: absolute;
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
         transition: transform 0.25s;
-        font-size: $font-size-large;
+        font-size: $font-size-h4;
       }
     }
   }
@@ -100,7 +101,7 @@
     overflow: auto;
 
     &-item {
-      @include theme-color(color, stroke, 2);
+      @include theme-color(color, stroke, 1);
       font-size: $font-size-normal;
       cursor: pointer;
       white-space: nowrap;
@@ -138,11 +139,11 @@
       }
 
       &:hover {
-        @include theme-color(background-color, primary, 8);
+        @include theme-color(background-color, stroke, 8);
       }
 
       &--active {
-        background: $theme-stroke-8;
+        @include theme-color(background-color, primary, 8);
         font-weight: 600;
       }
     }
@@ -166,20 +167,21 @@
       display: inline-block;
       font-size: $font-size-normal;
       padding: 0 5px;
-      line-height: 18px;
+      line-height: 24px;
       vertical-align: middle;
       max-width: 98px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
 
-      &:hover {
-        @include theme-color(background-color, primary, 8);
+      &:hover:not(.zent-cascader__list-link--active) {
+        @include theme-color(background-color, stroke, 8);
       }
 
       &--active {
-        @include theme-color(background-color, primary, 3);
-        @include theme-color(color, stroke, 9);
+        @include theme-color(background-color, primary, 8);
+        @include theme-color(color, stroke, 1);
+        font-weight: $font-weight-medium;
         border-radius: 2px;
       }
     }

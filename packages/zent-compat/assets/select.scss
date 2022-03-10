@@ -72,9 +72,8 @@
 
   &::after {
     // This component will be removed soon, update base64 image for now
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAFKADAAQAAAABAAAADAAAAADBhQ6EAAABS0lEQVQoFWNkAAJjY5Pp////TwMymUB8MsA/RkaGmWfPns2CGvD/IdAQcg0D2c/0/z/jEzADRPj6+nYxMDDuBbHJA4yHlJUVO0F6GWEGWFlZif348fMckC8NEyOSfsXJyWF49OjRZyD1cANBHBMTE+v//xkOAMOTBcQnAvxjZmZyP3369B6YWmYYA0Q/e/bssZSU5Fcg0x1ZHBcbGBHNZ86cmYcsjxERwJjqAzp8HbIibGygYfuAYd+ILofiZZikubk53+/ff84C+SowMWSakZHxBQsLs8HJkydfIouD2BguBAkCFX4CaggBavwO4iMDoNhfBob/UdgMA6nDaiBI4tSpUxeZmBizQWxU8L8BGCz7UcUQPJwGgpQAY28+MDzhgQ4Mt13AcGtDaMdkocQypjQDg4GB/s5v377yAQ27wcvLm7JgwQKMYEDWBwBOUl3zzR8jCAAAAABJRU5ErkJggg==');
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+ZG93bjwvdGl0bGU+CiAgICA8ZyBpZD0iZG93biIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBvbHlnb24gaWQ9Iui3r+W+hCIgZmlsbD0iIzk5OTk5OSIgZmlsbC1ydWxlPSJub256ZXJvIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjAwMzMwMSwgNi4xOTk3NDcpIHJvdGF0ZSg0NS4wMDAwMDApIHRyYW5zbGF0ZSgtOC4wMDMzMDEsIC02LjE5OTc0NykgIiBwb2ludHM9IjExLjc1MzMwMDkgMi40NDk3NDc0NyAxMS43NTMzMDA5IDkuOTQ5NzQ3NDcgNC4yNTMzMDA4NiA5Ljk0OTc0NzQ3IDQuMjUzMzAwODYgOC45NDk3NDc0NyAxMC43NTI1NTM0IDguOTQ5IDEwLjc1MzMwMDkgMi40NDk3NDc0NyI+PC9wb2x5Z29uPgogICAgPC9nPgo8L3N2Zz4=');
     background-repeat: no-repeat;
-    background-size: 10px 6px;
     background-position: center;
     top: 50%;
     right: 8px;
@@ -132,6 +131,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
   // sass-lint:enable no-vendor-prefixes
 
   &__empty {
@@ -213,6 +213,18 @@
 
   .zent-select-option {
     @include popup-menu-item-specific;
+
+    &.current {
+      @include theme-color(background-color, stroke, 8);
+    }
+
+    &.active {
+      @include theme-color(background-color, primary, 8);
+    }
+
+    &.active.current {
+      @include theme-color(background-color, primary, 8);
+    }
   }
 
   .zent-select-empty {
