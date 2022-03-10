@@ -4171,7 +4171,7 @@ X       X            X
 
 .zent-dialog-r[data-zv="9.8.0"].zent-dialog-r--has-header.zent-dialog-r--has-footer .zent-dialog-r-body-content {
   min-height: 46px;
-  max-height: calc( 100vh - 256px );
+  max-height: calc(100vh - 256px);
 }
 
 .zent-dialog-r-footer[data-zv="9.8.0"] {
