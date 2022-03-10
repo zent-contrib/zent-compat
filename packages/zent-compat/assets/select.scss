@@ -131,6 +131,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
   // sass-lint:enable no-vendor-prefixes
 
   &__empty {
@@ -212,6 +213,18 @@
 
   .zent-select-option {
     @include popup-menu-item-specific;
+
+    &.current {
+      @include theme-color(background-color, stroke, 8);
+    }
+
+    &.active {
+      @include theme-color(background-color, primary, 8);
+    }
+
+    &.active.current {
+      @include theme-color(background-color, primary, 8);
+    }
   }
 
   .zent-select-empty {

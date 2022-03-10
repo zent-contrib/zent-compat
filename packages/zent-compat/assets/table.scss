@@ -128,7 +128,7 @@ $blue: $theme-primary-4;
   .tbody {
     .tr {
       &:hover {
-        @include theme-color(background-color, primary, 8);
+        @include theme-color(background-color, stroke, 8);
 
         .empty-data {
           background: transparent;
