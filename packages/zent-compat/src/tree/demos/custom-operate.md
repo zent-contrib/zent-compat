@@ -23,7 +23,8 @@ en-US:
 ---
 
 ```jsx
-import { Tree, Icon, Radio } from 'zent';
+import { Tree } from '@zent/compat';
+import { Icon, Radio } from 'zent';
 
 const RadioGroup = Radio.Group;
 const originData = [{
@@ -58,7 +59,7 @@ const deepClone = (node, parentId = 0, nodeArray = []) => {
 		title: node.title
 	};
 	nodeArray.push(copyNode);
-	
+
 	for (let i = 0, l = node.children && node.children.length || 0; i < l; i++) {
 		deepClone(node.children[i], copyNode.id, nodeArray);
 	}
@@ -68,7 +69,7 @@ const deepClone = (node, parentId = 0, nodeArray = []) => {
 class TreeExample extends React.Component {
 	state = {
 		treeData: originData,
-		copyType: 'shallow' 
+		copyType: 'shallow'
 	}
 
 	onDelete = (data) => {
@@ -79,7 +80,7 @@ class TreeExample extends React.Component {
 
 	onClone = (data) => {
 		const { copyType } = this.state;
-	
+
 		if (copyType === 'shallow') {
 			const node = Object.assign({}, data, { id: Date.now() });
 			this.setState({
@@ -106,7 +107,7 @@ class TreeExample extends React.Component {
 			icon: <Icon type="plus" />,
 			action: this.onClone
 		}];
-	
+
 		return (
 			<div>
 				<RadioGroup onChange={this.onCopyTypeChange} value={copyType}>

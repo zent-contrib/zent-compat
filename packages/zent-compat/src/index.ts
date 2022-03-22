@@ -11,3 +11,4 @@ export * from './tooltip';
 export * from './upload';
 export * from './link';
 export * from './tree';
+export * from './portal';

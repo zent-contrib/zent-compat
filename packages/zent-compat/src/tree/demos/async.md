@@ -12,7 +12,7 @@ en-US:
 
 
 ```jsx
-import { Tree } from 'zent';
+import { Tree } from '@zent/compat';
 
 const fetchData = (data, callback) => {
 	if (data.level < 4) {

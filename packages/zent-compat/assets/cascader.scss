@@ -1,15 +1,6 @@
 @import 'theme/default';
 @import 'theme/font';
-
-@keyframes zent-cascader-ani-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
+@import './animation';
 
 .zent-cascader {
   display: inline-block;
@@ -129,7 +120,7 @@
         margin-top: -6px;
         position: absolute;
         display: inline-block;
-        animation: zent-cascader-ani-spin 1s infinite linear;
+        animation: zent-cp-ani-spin 1s infinite linear;
         border: 1px solid $theme-stroke-4;
         border-radius: 50%;
         right: 10px;

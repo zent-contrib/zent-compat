@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Component } from 'react';
 import cx from 'classnames';
-import { Portal } from 'zent';
+import { Portal } from '../portal';
 import defer from 'zent/es/utils/defer';
 import { WindowResizeHandler } from 'zent/es/utils/component/WindowResizeHandler';
 import findPositionedParent from 'zent/es/utils/dom/findPositionedParent';

@@ -1,11 +1,8 @@
 /* eslint-disable prefer-arrow-callback */
 
 /**
- * zent 里的是 postcss@8 的版本，这是拷贝过来的老版本
- *
- * postcss@8 的插件定义和遍历API发生了变化
+ * 同步 zent 中新版本
  */
-const postcss = require('postcss');
 const parseValue = require('postcss-value-parser');
 const constants = require('zent/plugins/css-compiler-constants');
 
@@ -14,37 +11,39 @@ const CompilerConstants = Object.keys(constants).reduce((acc, k) => {
   return acc;
 }, {});
 
-module.exports = postcss.plugin('postcss-plugin-constants', () => {
-  return root => {
-    root.walkRules(function(rule) {
-      rule.walkDecls(function(decl) {
-        const valueNode = parseValue(decl.value);
-        let modified = false;
+const hasOwn = Object.prototype.hasOwnProperty;
 
-        valueNode.walk((node, idx, nodes) => {
-          const variable = getCSSVariableName(node);
-          if (!variable) {
-            return;
-          }
+module.exports = () => {
+  return {
+    postcssPlugin: 'postcss-plugin-constants',
+    Declaration(decl) {
+      const valueNode = parseValue(decl.value);
+      let modified = false;
 
-          const { name, sign } = variable;
-          if (name && CompilerConstants.hasOwnProperty(name)) {
-            nodes[idx] = {
-              type: 'word',
-              value: `${sign}${CompilerConstants[name]}`,
-              sourceIndex: node.sourceIndex,
-            };
-            modified = true;
-          }
-        });
+      valueNode.walk((node, idx, nodes) => {
+        const variable = getCSSVariableName(node);
+        if (!variable) {
+          return;
+        }
 
-        if (modified) {
-          decl.value = valueNode.toString();
+        const { name, sign } = variable;
+        if (name && hasOwn.call(CompilerConstants, name)) {
+          nodes[idx] = {
+            type: 'word',
+            value: `${sign}${CompilerConstants[name]}`,
+            sourceIndex: node.sourceIndex,
+          };
+          modified = true;
         }
       });
-    });
+
+      if (modified) {
+        decl.value = valueNode.toString();
+      }
+    },
   };
-});
+};
+module.exports.postcss = true;
 
 function getCSSVariableName(node) {
   if (node.type === 'function') {

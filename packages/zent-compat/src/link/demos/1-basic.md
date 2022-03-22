@@ -9,7 +9,7 @@ en-US:
 ---
 
 ```jsx
-import { Link } from 'zent';
+import { Link } from '@zent/compat';
 
 ReactDOM.render(
 	<div>
