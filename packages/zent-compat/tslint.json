@@ -11,7 +11,7 @@
         "message": "Use .textContent instead. tsstyle#browser-oddities"
       }
     ],
-    "ban-ts-ignore": true,
+    "ban-ts-ignore": false,
     "ban-types": [
       true,
       ["Object", "Use {} instead."],
