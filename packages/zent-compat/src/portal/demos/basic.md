@@ -18,8 +18,7 @@ en-US:
 ---
 
 ```jsx
-import { Portal, PurePortal } from '@zent/compat';
-import { Button } from 'zent';
+import { Portal, PurePortal, Button } from 'zent';
 
 // const WrappedPortal = Portal.withNonScrollable(Portal.withESCToClose(Portal));
 

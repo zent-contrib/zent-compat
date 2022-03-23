@@ -276,8 +276,8 @@
 
 "@babel/helper-validator-identifier@^7.16.7":
   version "7.16.7"
-  resolved "http://registry.npm.qima-inc.com/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.16.7.tgz#e8c602438c4a8195751243da9031d1607d247cad"
-  integrity sha1-6MYCQ4xKgZV1EkPakDHRYH0kfK0=
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.16.7.tgz#e8c602438c4a8195751243da9031d1607d247cad"
+  integrity sha512-hsEnFemeiW4D08A5gUAZxLBTXpZ39P+a+DGDsHw1yxqyQ/jzFEnxf5uTEGp+3bzAbNOxU1paTgYS4ECU/IgfDw==
 
 "@babel/helper-wrap-function@^7.1.0":
   version "7.2.0"
@@ -899,8 +899,8 @@
 
 "@babel/types@^7.17.0":
   version "7.17.0"
-  resolved "http://registry.npm.qima-inc.com/@babel/types/download/@babel/types-7.17.0.tgz#a826e368bccb6b3d84acd76acad5c0d87342390b"
-  integrity sha1-qCbjaLzLaz2ErNdqytXA2HNCOQs=
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.17.0.tgz#a826e368bccb6b3d84acd76acad5c0d87342390b"
+  integrity sha512-TmKSNO4D5rzhL5bjWFcVHHLETzfQ/AmbKpKPOSjlP0WoHZ6L911fgoOKY4Alp/emzG4cHJdyN49zpgkbXFEHHw==
   dependencies:
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
@@ -1214,9 +1214,9 @@
     "@types/jest-diff" "*"
 
 "@types/json-schema@^7.0.8":
-  version "7.0.9"
-  resolved "http://registry.npm.qima-inc.com/@types/json-schema/download/@types/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
-  integrity sha1-l+3JA36gw4WFMgsolk3eOznkZg0=
+  version "7.0.10"
+  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.10.tgz#9b05b7896166cd00e9cbd59864853abf65d9ac23"
+  integrity sha512-BLO9bBq59vW3fxCpD4o0N4U+DXsvwvIcl+jofw0frQo/GrBFC+/jRZj1E7kgp6dvTyNmA4y6JCV5Id/r3mNP5A==
 
 "@types/lodash-es@^4.17.1":
   version "4.17.3"
@@ -1242,8 +1242,8 @@
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
-  resolved "http://registry.npm.qima-inc.com/@types/parse-json/download/@types/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
-  integrity sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
+  resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
+  integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
 "@types/prop-types@*":
   version "15.7.1"
@@ -1553,8 +1553,8 @@ ajv-keywords@^3.1.0:
 
 ajv-keywords@^3.5.2:
   version "3.5.2"
-  resolved "http://registry.npm.qima-inc.com/ajv-keywords/download/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
-  integrity sha1-MfKdpatuANHC0yms97WSlhTVAU0=
+  resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
+  integrity sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==
 
 ajv@^4.7.0:
   version "4.11.8"
@@ -1576,8 +1576,8 @@ ajv@^6.1.0, ajv@^6.10.2, ajv@^6.5.5, ajv@^6.9.1:
 
 ajv@^6.12.5:
   version "6.12.6"
-  resolved "http://registry.npm.qima-inc.com/ajv/download/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
-  integrity sha1-uvWmLoArB9l3A0WG+MO69a3ybfQ=
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
+  integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
   dependencies:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
@@ -1877,8 +1877,8 @@ atob@^2.1.1:
 
 autoprefixer@10.2.6:
   version "10.2.6"
-  resolved "http://registry.npm.qima-inc.com/autoprefixer/download/autoprefixer-10.2.6.tgz#aadd9ec34e1c98d403e01950038049f0eb252949"
-  integrity sha1-qt2ew04cmNQD4BlQA4BJ8OslKUk=
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.2.6.tgz#aadd9ec34e1c98d403e01950038049f0eb252949"
+  integrity sha512-8lChSmdU6dCNMCQopIf4Pe5kipkAGj/fvTMslCsih0uHpOrXOPUEVOmYMMqmw3cekQkSD7EhIeuYl5y0BLdKqg==
   dependencies:
     browserslist "^4.16.6"
     caniuse-lite "^1.0.30001230"
@@ -2300,8 +2300,8 @@ browserslist@^4.0.0, browserslist@^4.6.0, browserslist@^4.6.2, browserslist@^4.6
 
 browserslist@^4.16.6:
   version "4.20.2"
-  resolved "http://registry.npm.qima-inc.com/browserslist/download/browserslist-4.20.2.tgz#567b41508757ecd904dab4d1c646c612cd3d4f88"
-  integrity sha1-VntBUIdX7NkE2rTRxkbGEs09T4g=
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.20.2.tgz#567b41508757ecd904dab4d1c646c612cd3d4f88"
+  integrity sha512-CQOBCqp/9pDvDbx3xfMi+86pr4KXIf2FDkTTdeuYw8OxS9t898LA1Khq57gtufFILXpfgsSx5woNgsBgvGjpsA==
   dependencies:
     caniuse-lite "^1.0.30001317"
     electron-to-chromium "^1.4.84"
@@ -2525,8 +2525,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000823, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30000984, caniuse-lite@^1.0.30001230, caniuse-lite@^1.0.30001317:
-  version "1.0.30001317"
-  resolved "http://registry.npm.qima-inc.com/caniuse-lite/download/caniuse-lite-1.0.30001317.tgz"
+  version "1.0.30001319"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001319.tgz#eb4da4eb3ecdd409f7ba1907820061d56096e88f"
+  integrity sha512-xjlIAFHucBRSMUo1kb5D4LYgcN1M45qdKP++lhqowDpwJwGkpIRTt5qQqnhxjj1vHcI7nrJxWhCC1ATrCEBTcw==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3124,8 +3125,8 @@ cosmiconfig@^5.0.0, cosmiconfig@^5.0.7, cosmiconfig@^5.2.0:
 
 cosmiconfig@^7.0.0:
   version "7.0.1"
-  resolved "http://registry.npm.qima-inc.com/cosmiconfig/download/cosmiconfig-7.0.1.tgz#714d756522cace867867ccb4474c5d01bbae5d6d"
-  integrity sha1-cU11ZSLKzoZ4Z8y0R0xdAbuuXW0=
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-7.0.1.tgz#714d756522cace867867ccb4474c5d01bbae5d6d"
+  integrity sha512-a1YWNUV2HwGimB7dU2s1wUMurNKjpx60HxBB6xUM8Re+2s1g1IIfJvFR0/iCF+XHdE0GMTKTuLR32UQff4TEyQ==
   dependencies:
     "@types/parse-json" "^4.0.0"
     import-fresh "^3.2.1"
@@ -3876,9 +3877,9 @@ electron-to-chromium@^1.3.191, electron-to-chromium@^1.3.47:
   integrity sha512-gachlDdHSK47s0N2e58GH9HMC6Z4ip0SfmYUa5iEbE50AKaOUXysaJnXMfKj0xB245jWbYcyFSH+th3rqsF8hA==
 
 electron-to-chromium@^1.4.84:
-  version "1.4.85"
-  resolved "http://registry.npm.qima-inc.com/electron-to-chromium/download/electron-to-chromium-1.4.85.tgz#a3666ba42147026b9f34d4d8d4caf0740e80f751"
-  integrity sha1-o2ZrpCFHAmufNNTY1MrwdA6A91E=
+  version "1.4.89"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.89.tgz#33c06592812a17a7131873f4596579084ce33ff8"
+  integrity sha512-z1Axg0Fu54fse8wN4fd+GAINdU5mJmLtcl6bqIcYyzNVGONcfHAeeJi88KYMQVKalhXlYuVPzKkFIU5VD0raUw==
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -4661,8 +4662,8 @@ fast-deep-equal@^2.0.1:
 
 fast-deep-equal@^3.1.1:
   version "3.1.3"
-  resolved "http://registry.npm.qima-inc.com/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
-  integrity sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
+  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
 fast-glob@^3.2.9:
   version "3.2.11"
@@ -5021,8 +5022,8 @@ forwarded@~0.1.2:
 
 fraction.js@^4.1.1:
   version "4.2.0"
-  resolved "http://registry.npm.qima-inc.com/fraction.js/download/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
-  integrity sha1-RI5RCaMTo1J/WjqyEZ7Ezw4OKVA=
+  resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
+  integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
 fragment-cache@^0.2.1:
   version "0.2.1"
@@ -13119,8 +13120,8 @@ yup@^0.27.0:
 
 zent@10.0.0-rc.8:
   version "10.0.0-rc.8"
-  resolved "http://registry.npm.qima-inc.com/zent/download/zent-10.0.0-rc.8.tgz#e999f870506f9979b8c628fcd6d2cd89f47ca699"
-  integrity sha1-6Zn4cFBvmXm4xij81tLNifR8ppk=
+  resolved "https://registry.yarnpkg.com/zent/-/zent-10.0.0-rc.8.tgz#e999f870506f9979b8c628fcd6d2cd89f47ca699"
+  integrity sha512-Y/+619f1O6oqHPyNleSoJ0sZn59zrIqh6Mrikm4pTDctj4Mk3F/6s1g+TOepRNmU5zETiM+n4NplqgFWB6XfIA==
   dependencies:
     "@types/sortablejs" "~1.10.6"
     big.js "^6.1.1"
@@ -13141,5 +13142,5 @@ zent@10.0.0-rc.8:
 
 zenticons@3.7.4:
   version "3.7.4"
-  resolved "http://registry.npm.qima-inc.com/zenticons/download/zenticons-3.7.4.tgz#90eaf8b20efb3d39100dfb311399424801c93db7"
-  integrity sha1-kOr4sg77PTkQDfsxE5lCSAHJPbc=
+  resolved "https://registry.yarnpkg.com/zenticons/-/zenticons-3.7.4.tgz#90eaf8b20efb3d39100dfb311399424801c93db7"
+  integrity sha512-IJw0vS3F/MKdT+ueiupr6jPfQoDpf2p3Ia+F1+IOa/Z0AtTT/uqkAm/xKZoVUYOmL/BObMbYA1tUQULx2Rpa3w==
