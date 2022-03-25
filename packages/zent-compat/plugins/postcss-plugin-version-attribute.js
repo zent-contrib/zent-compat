@@ -68,7 +68,12 @@ function transform(selectors) {
       // body.foobar, html.foobar are not handled as they won't appear in a library
       let skip = true;
       selector.walk(node => {
-        const { type } = node;
+        const { type, value } = node;
+        // form 样式比较扁平，自定义 field 时，动态加上版本号会有问题，这里过滤掉 form 样式的处理
+        if (value && value.startsWith('zent-form')) {
+          skip = true;
+          return false;
+        }
         if (type === parseSelector.CLASS || type === parseSelector.ID) {
           skip = false;
         }
