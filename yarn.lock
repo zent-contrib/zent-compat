@@ -7095,7 +7095,7 @@ jsesc@~0.5.0:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
 
-json-parse-better-errors@^1.0.2:
+json-parse-better-errors@^1.0.1, json-parse-better-errors@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/json-parse-better-errors/-/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
   integrity sha512-mrqyZKfX5EhL7hvqcV6WG1yYjnjeuYDzDhhcAAUrq8Po85NBQBJP+ZDUT75qZQ98IkUoBqdkExkukOU7Ts2wrw==
@@ -13118,10 +13118,10 @@ yup@^0.27.0:
     synchronous-promise "^2.0.6"
     toposort "^2.0.2"
 
-zent@10.0.0-rc.8:
-  version "10.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/zent/-/zent-10.0.0-rc.8.tgz#e999f870506f9979b8c628fcd6d2cd89f47ca699"
-  integrity sha512-Y/+619f1O6oqHPyNleSoJ0sZn59zrIqh6Mrikm4pTDctj4Mk3F/6s1g+TOepRNmU5zETiM+n4NplqgFWB6XfIA==
+zent@10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/zent/-/zent-10.0.0.tgz#211dd64c5fded09b911e3c7aee5652e9b7ce9ab2"
+  integrity sha512-ad63ocsWrT0SSuwIhEhnDxeD9qHg7TyjUnjHs0sDrrLGNpWS1VlHkR8pO4QgqLhIWwn+q/0o2OrhBh8gUaqKlQ==
   dependencies:
     "@types/sortablejs" "~1.10.6"
     big.js "^6.1.1"
