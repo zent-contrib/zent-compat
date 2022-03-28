@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0] - 2022-03-28
+### Changed
+- 更新 zent 依赖到 10.0 版本
+- 组件支持样式隔离（form 除外，因为项目中会有直接挂 form 相关 class 的写法）
+
+## [2.2.1] - 2022-03-10
+### Changed
+- 更新 select、cascader、table 样式，贴近新版设计语言
+
 ## [2.2.0] - 2022-02-09
 ### Added
 - 增加 zent@9 的 `Tree` 和 `Link` 组件
