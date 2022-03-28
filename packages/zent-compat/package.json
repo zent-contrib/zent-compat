@@ -31,7 +31,7 @@
     "@types/sortablejs": "~1.10.6",
     "classnames": "^2.2.6",
     "date-fns": "^2.15.0",
-    "lodash-es": "^4.17.11",
+    "lodash-es": "^4.17.21",
     "react-is": "^17.0.1",
     "sortablejs": "~1.12.0",
     "tslib": "^2.3.0",
