@@ -18,7 +18,8 @@
     "prettify-ts": "prettier --write -- \"packages/*/src/**/*.ts*(x)\"",
     "prettify": "yarn prettify-js && yarn prettify-ts && yarn prettify-style",
     "dev": "yarn workspace zent-docs dev",
-    "deploy": "yarn workspace zent-docs deploy"
+    "deploy": "yarn workspace zent-docs deploy",
+    "prepare": "ts-patch install -s"
   },
   "workspaces": [
     "site",
@@ -47,7 +48,9 @@
     "eslint-plugin-react": "^7.11.1",
     "husky": "^1.2.0",
     "lint-staged": "^8.0.5",
+    "postcss": "8.3.5",
     "prettier": "^1.19.1",
-    "sass-lint": "^1.12.1"
+    "sass-lint": "^1.12.1",
+    "ts-patch": "1.4.3"
   }
 }

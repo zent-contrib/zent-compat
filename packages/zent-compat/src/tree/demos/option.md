@@ -34,7 +34,7 @@ en-US:
 
 
 ```jsx
-import { Tree } from 'zent';
+import { Tree } from '@zent/compat';
 
 const treeData = [{
 	id: 1,

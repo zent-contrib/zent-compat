@@ -11,6 +11,51 @@ const constants = require('../src/constants');
 
 const DEV = process.env.NODE_ENV !== 'production';
 
+const getScssLoaders = (includeZentPlugins = false) => {
+  return [
+    DEV ? 'style-loader' : MiniCssExtractPlugin.loader,
+    {
+      loader: 'css-loader',
+      options: {
+        importLoaders: 1,
+        sourceMap: DEV,
+      },
+    },
+    {
+      loader: 'postcss-loader',
+      options: {
+        sourceMap: DEV,
+        postcssOptions: {
+          plugins: (includeZentPlugins
+            ? [
+                require.resolve(
+                  '../../packages/zent-compat/plugins/postcss-plugin-constants'
+                ),
+                require.resolve(
+                  '../../packages/zent-compat/plugins/postcss-plugin-version-attribute'
+                ),
+              ]
+            : []
+          ).concat(['autoprefixer']),
+        },
+      },
+    },
+    {
+      loader: 'sass-loader',
+      options: {
+        sourceMap: DEV,
+        implementation: sass,
+        fiber: Fiber,
+        includePaths: [
+          path.dirname(
+            path.dirname(require.resolve('zent/assets/theme/_default.scss'))
+          ),
+        ],
+      },
+    },
+  ];
+};
+
 module.exports = {
   mode: process.env.NODE_ENV,
 
@@ -39,38 +84,13 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        use: [
-          DEV ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'cache-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              sourceMap: DEV,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: DEV,
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: DEV,
-              implementation: sass,
-              fiber: Fiber,
-              includePaths: [
-                path.dirname(
-                  path.dirname(
-                    require.resolve('zent/assets/theme/_default.scss')
-                  )
-                ),
-              ],
-            },
-          },
-        ],
+        exclude: [path.resolve(__dirname, '../../packages/zent-compat/assets')],
+        use: getScssLoaders(false),
+      },
+      {
+        test: /\.scss$/,
+        include: [path.resolve(__dirname, '../../packages/zent-compat/assets')],
+        use: getScssLoaders(true),
       },
       {
         test: /\.jsx?$/,

@@ -20,6 +20,7 @@ node $basepath/./compile-style.js
 postcss \
   css \
   --use "$(realpath "$basepath/../plugins/postcss-plugin-constants")" \
+  --use $(realpath $basepath/../plugins/postcss-plugin-version-attribute) \
   --use autoprefixer \
   --replace \
   --no-map
