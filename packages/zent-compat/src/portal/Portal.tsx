@@ -13,7 +13,7 @@ import PurePortal, { IPurePortalProps } from './PurePortal';
 import { getNodeFromSelector, hasScrollbarY } from './util';
 import memorize from 'zent/es/utils/memorize-one';
 import createElement from '../utils/dom/createElement';
-import { SCROLLBAR_WIDTH } from 'zent/es/utils/getScrollbarWidth';
+import measureScrollbar from 'zent/es/utils/dom/measureScrollbar';
 import { setValueForStyles } from 'zent/es/utils/style/CSSPropertyOperations';
 import { addEventListener } from 'zent/es/utils/component/event-handler';
 import isBrowser from 'zent/es/utils/isBrowser';
@@ -51,7 +51,7 @@ function patchElement(parent: HTMLElement) {
   } else {
     const { overflowY, paddingRight } = parent.style;
     const originalPadding = getComputedStyle(parent).paddingRight;
-    const newPadding = parseFloat(originalPadding || '0') + SCROLLBAR_WIDTH;
+    const newPadding = parseFloat(originalPadding || '0') + measureScrollbar();
     parent.style.overflowY = 'hidden';
     parent.style.paddingRight = `${newPadding}px`;
     const newMeta: IPatchMeta = {
